@@ -410,8 +410,17 @@
     return rows;
   }
 
+  function stripPlatform(name) {
+    return name.toLowerCase()
+      .replace(/\s*\(?(bing|google|meta|fb|linkedin)\s*(ads)?\)?\s*/gi, ' ')
+      .replace(/\s*(ads|bing|google|meta|fb)\s*$/i, '')
+      .replace(/\s*\(.*?\)\s*/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+  }
+
   function findBudgetFuzzy(budgetMap, accountName) {
     const nameLower = accountName.toLowerCase();
+    const nameCore = stripPlatform(accountName);
     // Try substring matching
     for (const [key, val] of Object.entries(budgetMap)) {
       if (nameLower.includes(key) || key.includes(nameLower)) return val;
@@ -419,6 +428,11 @@
       const baseKey = key.replace(/\s*\(.*?\)\s*/g, '').trim();
       const baseName = nameLower.replace(/\s*\(.*?\)\s*/g, '').trim();
       if (baseName === baseKey || baseName.includes(baseKey) || baseKey.includes(baseName)) return val;
+      // Try with platform-stripped core names
+      const keyCore = stripPlatform(key);
+      if (keyCore.length > 3 && nameCore.length > 3) {
+        if (nameCore.includes(keyCore) || keyCore.includes(nameCore)) return val;
+      }
     }
     return null;
   }
