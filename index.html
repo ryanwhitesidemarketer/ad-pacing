@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TWM PPC Pacing Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --card: #22262f;
+    --border: #2e3340;
+    --text: #e1e4ea;
+    --text-muted: #8b90a0;
+    --accent: #4f8ff7;
+    --green: #34d399;
+    --yellow: #fbbf24;
+    --red: #f87171;
+    --orange: #fb923c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .header .subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .tab-bar {
+    display: flex;
+    gap: 4px;
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 4px;
+  }
+  .tab-bar button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .tab-bar button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  .tab-bar button:hover:not(.active) {
+    background: var(--card);
+    color: var(--text);
+  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px 32px; }
+
+  /* Summary cards */
+  .summary-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .summary-card .label {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .summary-card .value {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .summary-card .sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  /* Table */
+  .table-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .table-header-bar {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .table-header-bar h2 { font-size: 16px; font-weight: 600; }
+  .search-box {
+    padding: 7px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 13px;
+    width: 220px;
+  }
+  .search-box::placeholder { color: var(--text-muted); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover { color: var(--text); }
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody tr:hover { background: rgba(79,143,247,0.04); }
+  tbody tr:last-child td { border-bottom: none; }
+  .client-name { font-weight: 500; color: var(--text); max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+  .type-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .type-ecommerce { background: rgba(79,143,247,0.15); color: var(--accent); }
+  .type-lead_gen { background: rgba(251,191,36,0.15); color: var(--yellow); }
+
+  /* Pacing bar */
+  .pacing-cell { min-width: 160px; }
+  .pacing-bar-wrap {
+    background: var(--bg);
+    border-radius: 4px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .pacing-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s;
+  }
+  .pace-good { background: var(--green); }
+  .pace-warn { background: var(--yellow); }
+  .pace-over { background: var(--red); }
+  .pace-under { background: var(--orange); }
+
+  .pacing-text { font-size: 13px; font-weight: 600; }
+  .pacing-sub { font-size: 11px; color: var(--text-muted); }
+
+  /* Comparison column */
+  .compare-up { color: var(--green); }
+  .compare-down { color: var(--red); }
+  .compare-neutral { color: var(--text-muted); }
+  .compare-label { font-size: 10px; color: var(--text-muted); display: block; }
+
+  .money { text-align: right; }
+  .num { text-align: right; }
+
+  /* Loading / Error */
+  .status-msg {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+  .status-msg.error { color: var(--red); }
+
+  .updated-at {
+    text-align: center;
+    padding: 16px;
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header { padding: 16px; }
+    .container { padding: 16px; }
+    .table-wrap { overflow-x: auto; }
+    table { min-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>PPC Pacing Dashboard</h1>
+    <div class="subtitle" id="headerSubtitle">Loading...</div>
+  </div>
+  <div class="tab-bar" id="tabBar">
+    <button data-platform="google-ads" class="active">Google Ads</button>
+    <button data-platform="meta-ads">Meta Ads</button>
+    <button data-platform="bing-ads">Bing Ads</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="summary-row" id="summaryRow"></div>
+  <div class="table-wrap">
+    <div class="table-header-bar">
+      <h2 id="tableTitle">Google Ads Pacing</h2>
+      <input type="text" class="search-box" id="searchBox" placeholder="Filter clients...">
+    </div>
+    <div id="tableContainer">
+      <div class="status-msg">Loading data...</div>
+    </div>
+  </div>
+  <div class="updated-at" id="updatedAt"></div>
+</div>
+
+<script>
+(function() {
+  // --- Config ---
+  const BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? '.'
+    : '.';
+
+  const PLATFORM_LABELS = {
+    'google-ads': 'Google Ads',
+    'meta-ads': 'Meta Ads',
+    'bing-ads': 'Bing Ads'
+  };
+  const PLATFORM_KEYS = {
+    'google-ads': 'google_ads',
+    'meta-ads': 'meta_ads',
+    'bing-ads': 'bing_ads'
+  };
+
+  let state = {
+    platform: 'google-ads',
+    budgets: null,
+    platformData: {},
+    searchTerm: '',
+    sortCol: 'client_name',
+    sortDir: 'asc'
+  };
+
+  // --- URL Params ---
+  const params = new URLSearchParams(window.location.search);
+  const clientFilter = params.get('client'); // e.g. ?client=rockcastle
+  const platformParam = params.get('platform');
+  if (platformParam && PLATFORM_LABELS[platformParam]) {
+    state.platform = platformParam;
+  }
+
+  // --- DOM ---
+  const summaryRow = document.getElementById('summaryRow');
+  const tableContainer = document.getElementById('tableContainer');
+  const tableTitle = document.getElementById('tableTitle');
+  const headerSubtitle = document.getElementById('headerSubtitle');
+  const updatedAt = document.getElementById('updatedAt');
+  const searchBox = document.getElementById('searchBox');
+  const tabBar = document.getElementById('tabBar');
+
+  // --- Init ---
+  initTabs();
+  searchBox.addEventListener('input', (e) => {
+    state.searchTerm = e.target.value.toLowerCase();
+    render();
+  });
+
+  if (clientFilter) {
+    searchBox.value = clientFilter;
+    state.searchTerm = clientFilter.toLowerCase();
+    headerSubtitle.textContent = `Filtered: ${clientFilter}`;
+  }
+
+  loadData();
+
+  // --- Tab switching ---
+  function initTabs() {
+    tabBar.querySelectorAll('button').forEach(btn => {
+      if (btn.dataset.platform === state.platform) btn.classList.add('active');
+      else btn.classList.remove('active');
+      btn.addEventListener('click', () => {
+        tabBar.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.platform = btn.dataset.platform;
+        const url = new URL(window.location);
+        url.searchParams.set('platform', state.platform);
+        history.replaceState(null, '', url);
+        render();
+      });
+    });
+  }
+
+  // --- Data loading ---
+  async function loadData() {
+    try {
+      const [budgetsRes, googleRes, metaRes, bingRes] = await Promise.allSettled([
+        fetch(`${BASE}/data/budgets.json`).then(r => r.ok ? r.json() : null),
+        fetch(`${BASE}/data/google-ads.json`).then(r => r.ok ? r.json() : null),
+        fetch(`${BASE}/data/meta-ads.json`).then(r => r.ok ? r.json() : null),
+        fetch(`${BASE}/data/bing-ads.json`).then(r => r.ok ? r.json() : null)
+      ]);
+
+      state.budgets = budgetsRes.status === 'fulfilled' ? budgetsRes.value : null;
+      state.platformData['google-ads'] = googleRes.status === 'fulfilled' ? googleRes.value : null;
+      state.platformData['meta-ads'] = metaRes.status === 'fulfilled' ? metaRes.value : null;
+      state.platformData['bing-ads'] = bingRes.status === 'fulfilled' ? bingRes.value : null;
+
+      if (!state.budgets && !state.platformData['google-ads']) {
+        tableContainer.innerHTML = '<div class="status-msg">No data available yet. Data will populate after the first nightly sync runs.</div>';
+        headerSubtitle.textContent = 'Awaiting first data sync';
+        return;
+      }
+
+      render();
+    } catch (err) {
+      tableContainer.innerHTML = `<div class="status-msg error">Error loading data: ${err.message}</div>`;
+    }
+  }
+
+  // --- Merge budgets + actuals ---
+  function getMergedRows(platform) {
+    const platformKey = PLATFORM_KEYS[platform];
+    const pData = state.platformData[platform];
+    const budgets = state.budgets ? state.budgets.budgets : [];
+
+    // Build a map of budgets for this platform
+    const budgetMap = {};
+    budgets.filter(b => b.platform === platformKey).forEach(b => {
+      // Use client_name as key since slug matching is complex
+      budgetMap[b.client_name.toLowerCase()] = b;
+    });
+
+    const rows = [];
+    const seen = new Set();
+
+    // First: go through platform actual data
+    if (pData && pData.accounts) {
+      Object.entries(pData.accounts).forEach(([slug, acct]) => {
+        const nameLower = acct.name.toLowerCase();
+        const budget = budgetMap[nameLower] || findBudgetFuzzy(budgetMap, acct.name);
+
+        rows.push({
+          slug,
+          client_name: acct.name,
+          client_type: budget ? budget.client_type : 'unknown',
+          monthly_budget: budget ? budget.monthly_budget : null,
+          current: acct.current || null,
+          prior_year: acct.prior_year || null,
+          prior_month: acct.prior_month || null,
+          comparison_period: acct.prior_year ? 'annual' : (acct.prior_month ? 'monthly' : null)
+        });
+        seen.add(nameLower);
+        if (budget) seen.add(budget.client_name.toLowerCase());
+      });
+    }
+
+    // Then: add budget-only entries (accounts with budgets but no actuals yet)
+    budgets.filter(b => b.platform === platformKey).forEach(b => {
+      if (!seen.has(b.client_name.toLowerCase())) {
+        rows.push({
+          slug: slugify(b.client_name),
+          client_name: b.client_name,
+          client_type: b.client_type,
+          monthly_budget: b.monthly_budget,
+          current: null,
+          prior_year: null,
+          prior_month: null,
+          comparison_period: null
+        });
+      }
+    });
+
+    return rows;
+  }
+
+  function findBudgetFuzzy(budgetMap, accountName) {
+    const nameLower = accountName.toLowerCase();
+    // Try substring matching
+    for (const [key, val] of Object.entries(budgetMap)) {
+      if (nameLower.includes(key) || key.includes(nameLower)) return val;
+      // Try without parenthetical
+      const baseKey = key.replace(/\s*\(.*?\)\s*/g, '').trim();
+      const baseName = nameLower.replace(/\s*\(.*?\)\s*/g, '').trim();
+      if (baseName === baseKey || baseName.includes(baseKey) || baseKey.includes(baseName)) return val;
+    }
+    return null;
+  }
+
+  function slugify(name) {
+    return name.toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  // --- Pacing calculations ---
+  function calcPacing(row) {
+    if (!row.monthly_budget || row.monthly_budget <= 0) return null;
+    const spent = row.current ? row.current.cost : 0;
+    const now = new Date();
+    const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+    const dayOfMonth = now.getDate();
+    const pctMonth = dayOfMonth / daysInMonth;
+    const pctSpent = spent / row.monthly_budget;
+    const projected = pctMonth > 0 ? spent / pctMonth : 0;
+    const diff = row.monthly_budget - projected;
+    const paceRatio = pctMonth > 0 ? pctSpent / pctMonth : 0;
+
+    return {
+      spent,
+      budget: row.monthly_budget,
+      pctSpent,
+      pctMonth,
+      projected,
+      diff,
+      paceRatio,
+      status: paceRatio > 1.1 ? 'over' : paceRatio > 0.9 ? 'good' : paceRatio > 0.7 ? 'warn' : 'under'
+    };
+  }
+
+  // --- Comparison (YoY or MoM) ---
+  function calcComparison(row) {
+    const isEcommerce = row.client_type === 'ecommerce';
+    const metricKey = isEcommerce ? 'revenue' : 'conversions';
+    const metricLabel = isEcommerce ? 'Revenue' : 'Conversions';
+
+    // Prefer prior year; fallback to prior month
+    let compareData = null;
+    let period = null;
+
+    if (row.prior_year && row.prior_year[metricKey] != null) {
+      compareData = row.prior_year;
+      period = 'annual';
+    } else if (row.prior_month && row.prior_month[metricKey] != null) {
+      compareData = row.prior_month;
+      period = 'monthly';
+    }
+
+    if (!compareData) return null;
+
+    const currentVal = row.current ? (row.current[metricKey] || 0) : 0;
+    const priorVal = compareData[metricKey] || 0;
+    const change = priorVal > 0 ? (currentVal - priorVal) / priorVal : 0;
+
+    return {
+      metricLabel,
+      metricKey,
+      currentVal,
+      priorVal,
+      change,
+      period, // 'annual' or 'monthly'
+      periodLabel: period === 'annual' ? 'vs Prior Year' : 'vs Prior Month'
+    };
+  }
+
+  // --- Render ---
+  function render() {
+    const platform = state.platform;
+    const pData = state.platformData[platform];
+    tableTitle.textContent = `${PLATFORM_LABELS[platform]} Pacing`;
+
+    let rows = getMergedRows(platform);
+
+    // Filter
+    if (state.searchTerm) {
+      rows = rows.filter(r => r.client_name.toLowerCase().includes(state.searchTerm));
+    }
+
+    // Sort
+    rows.sort((a, b) => {
+      let va, vb;
+      if (state.sortCol === 'client_name') {
+        va = a.client_name.toLowerCase();
+        vb = b.client_name.toLowerCase();
+      } else if (state.sortCol === 'budget') {
+        va = a.monthly_budget || 0;
+        vb = b.monthly_budget || 0;
+      } else if (state.sortCol === 'spent') {
+        va = a.current ? a.current.cost : 0;
+        vb = b.current ? b.current.cost : 0;
+      } else if (state.sortCol === 'pacing') {
+        const pa = calcPacing(a);
+        const pb = calcPacing(b);
+        va = pa ? pa.paceRatio : 0;
+        vb = pb ? pb.paceRatio : 0;
+      } else if (state.sortCol === 'projected') {
+        const pa = calcPacing(a);
+        const pb = calcPacing(b);
+        va = pa ? pa.projected : 0;
+        vb = pb ? pb.projected : 0;
+      } else if (state.sortCol === 'comparison') {
+        const ca = calcComparison(a);
+        const cb = calcComparison(b);
+        va = ca ? ca.change : -999;
+        vb = cb ? cb.change : -999;
+      } else {
+        va = a.client_name;
+        vb = b.client_name;
+      }
+      if (va < vb) return state.sortDir === 'asc' ? -1 : 1;
+      if (va > vb) return state.sortDir === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    // Summary stats
+    renderSummary(rows);
+
+    // Table
+    if (rows.length === 0) {
+      tableContainer.innerHTML = '<div class="status-msg">No accounts found for this platform.</div>';
+      return;
+    }
+
+    const sortIcon = (col) => state.sortCol === col ? (state.sortDir === 'asc' ? ' ▲' : ' ▼') : '';
+
+    let html = `<table>
+      <thead><tr>
+        <th data-col="client_name">Client${sortIcon('client_name')}</th>
+        <th>Type</th>
+        <th data-col="budget" class="money">Budget${sortIcon('budget')}</th>
+        <th data-col="spent" class="money">MTD Spend${sortIcon('spent')}</th>
+        <th data-col="pacing" class="pacing-cell">Pacing${sortIcon('pacing')}</th>
+        <th data-col="projected" class="money">Projected${sortIcon('projected')}</th>
+        <th data-col="comparison">Performance${sortIcon('comparison')}</th>
+      </tr></thead><tbody>`;
+
+    rows.forEach(row => {
+      const pacing = calcPacing(row);
+      const comp = calcComparison(row);
+
+      // Client name
+      html += `<tr><td class="client-name" title="${esc(row.client_name)}">${esc(row.client_name)}</td>`;
+
+      // Type badge
+      const typeLabel = row.client_type === 'ecommerce' ? 'Ecommerce' : row.client_type === 'lead_gen' ? 'Lead Gen' : '—';
+      const typeClass = row.client_type === 'ecommerce' ? 'type-ecommerce' : row.client_type === 'lead_gen' ? 'type-lead_gen' : '';
+      html += `<td><span class="type-badge ${typeClass}">${typeLabel}</span></td>`;
+
+      // Budget
+      html += `<td class="money">${row.monthly_budget != null ? '$' + fmt(row.monthly_budget) : '—'}</td>`;
+
+      // MTD Spend
+      const spent = row.current ? row.current.cost : 0;
+      html += `<td class="money">${row.current ? '$' + fmt(spent) : '—'}</td>`;
+
+      // Pacing bar
+      if (pacing) {
+        const barW = Math.min(pacing.pctSpent * 100, 100);
+        const statusClass = 'pace-' + pacing.status;
+        const pctText = (pacing.pctSpent * 100).toFixed(1) + '%';
+        const idealPct = (pacing.pctMonth * 100).toFixed(0) + '%';
+        html += `<td class="pacing-cell">
+          <span class="pacing-text">${pctText}</span>
+          <span class="pacing-sub"> of budget (${idealPct} of month)</span>
+          <div class="pacing-bar-wrap"><div class="pacing-bar ${statusClass}" style="width:${barW}%"></div></div>
+        </td>`;
+      } else {
+        html += `<td class="pacing-cell"><span class="pacing-sub">No budget set</span></td>`;
+      }
+
+      // Projected
+      if (pacing) {
+        const projColor = pacing.status === 'over' ? 'color:var(--red)' : pacing.status === 'under' ? 'color:var(--orange)' : '';
+        html += `<td class="money" style="${projColor}">$${fmt(pacing.projected)}</td>`;
+      } else {
+        html += `<td class="money">—</td>`;
+      }
+
+      // Comparison
+      if (comp) {
+        const arrow = comp.change >= 0 ? '▲' : '▼';
+        const changeClass = comp.change >= 0 ? 'compare-up' : 'compare-down';
+        const changePct = (Math.abs(comp.change) * 100).toFixed(1) + '%';
+        const currentFmt = comp.metricKey === 'revenue' ? '$' + fmt(comp.currentVal) : fmtInt(comp.currentVal);
+        const priorFmt = comp.metricKey === 'revenue' ? '$' + fmt(comp.priorVal) : fmtInt(comp.priorVal);
+
+        html += `<td>
+          <span class="${changeClass}">${arrow} ${changePct}</span>
+          <span class="compare-label">${comp.metricLabel}: ${currentFmt} ${comp.periodLabel} (${priorFmt})</span>
+        </td>`;
+      } else {
+        html += `<td><span class="compare-label">No comparison data</span></td>`;
+      }
+
+      html += `</tr>`;
+    });
+
+    html += '</tbody></table>';
+    tableContainer.innerHTML = html;
+
+    // Sort click handlers
+    tableContainer.querySelectorAll('th[data-col]').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.col;
+        if (state.sortCol === col) {
+          state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
+        } else {
+          state.sortCol = col;
+          state.sortDir = 'asc';
+        }
+        render();
+      });
+    });
+
+    // Updated time
+    const times = [
+      state.budgets ? state.budgets.last_updated : null,
+      pData ? pData.last_updated : null
+    ].filter(Boolean);
+    if (times.length > 0) {
+      const latest = new Date(Math.max(...times.map(t => new Date(t))));
+      updatedAt.textContent = `Last updated: ${latest.toLocaleString()}`;
+    }
+    if (!clientFilter) {
+      headerSubtitle.textContent = `${PLATFORM_LABELS[platform]} — ${rows.length} accounts`;
+    }
+  }
+
+  function renderSummary(rows) {
+    const withBudget = rows.filter(r => r.monthly_budget && r.monthly_budget > 0);
+    const totalBudget = withBudget.reduce((s, r) => s + r.monthly_budget, 0);
+    const totalSpent = withBudget.reduce((s, r) => s + (r.current ? r.current.cost : 0), 0);
+    const now = new Date();
+    const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+    const pctMonth = now.getDate() / daysInMonth;
+    const totalProjected = pctMonth > 0 ? totalSpent / pctMonth : 0;
+
+    const overPacing = withBudget.filter(r => {
+      const p = calcPacing(r);
+      return p && p.paceRatio > 1.1;
+    }).length;
+    const underPacing = withBudget.filter(r => {
+      const p = calcPacing(r);
+      return p && p.paceRatio < 0.7;
+    }).length;
+
+    summaryRow.innerHTML = `
+      <div class="summary-card">
+        <div class="label">Total Budget</div>
+        <div class="value">$${fmt(totalBudget)}</div>
+        <div class="sub">${withBudget.length} accounts</div>
+      </div>
+      <div class="summary-card">
+        <div class="label">MTD Spend</div>
+        <div class="value">$${fmt(totalSpent)}</div>
+        <div class="sub">${(totalBudget > 0 ? (totalSpent/totalBudget*100).toFixed(1) : 0)}% of total budget</div>
+      </div>
+      <div class="summary-card">
+        <div class="label">Projected EOM</div>
+        <div class="value" style="color:${Math.abs(totalProjected - totalBudget) / totalBudget > 0.1 ? 'var(--yellow)' : 'var(--green)'}">$${fmt(totalProjected)}</div>
+        <div class="sub">${totalBudget > 0 ? (totalProjected > totalBudget ? '+' : '') + '$' + fmt(totalProjected - totalBudget) + ' vs budget' : ''}</div>
+      </div>
+      <div class="summary-card">
+        <div class="label">Alerts</div>
+        <div class="value" style="color:${(overPacing + underPacing) > 0 ? 'var(--yellow)' : 'var(--green)'}">${overPacing + underPacing}</div>
+        <div class="sub">${overPacing} over · ${underPacing} under-pacing</div>
+      </div>
+    `;
+  }
+
+  // --- Helpers ---
+  function fmt(n) {
+    return Number(n).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  }
+  function fmtInt(n) {
+    return Math.round(n).toLocaleString('en-US');
+  }
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+})();
+</script>
+</body>
+</html>
