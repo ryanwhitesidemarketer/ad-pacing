@@ -216,10 +216,10 @@
   .status-msg.error { color: var(--red); }
 
   .updated-at {
-    text-align: center;
-    padding: 16px;
+    text-align: right;
+    padding: 4px 0 8px;
     color: var(--text-muted);
-    font-size: 12px;
+    font-size: 11px;
   }
 
   /* Responsive */
@@ -246,6 +246,7 @@
 </div>
 
 <div class="container">
+  <div class="updated-at" id="updatedAt"></div>
   <div class="summary-row" id="summaryRow"></div>
   <div class="table-wrap">
     <div class="table-header-bar">
@@ -256,7 +257,6 @@
       <div class="status-msg">Loading data...</div>
     </div>
   </div>
-  <div class="updated-at" id="updatedAt"></div>
 </div>
 
 <script>
@@ -418,31 +418,89 @@
     return rows;
   }
 
-  function stripPlatform(name) {
+  function normalize(name) {
     return name.toLowerCase()
-      .replace(/\s*\(?(bing|google|meta|fb|linkedin)\s*(ads)?\)?\s*/gi, ' ')
-      .replace(/\s*(ads|bing|google|meta|fb)\s*$/i, '')
-      .replace(/\s*\(.*?\)\s*/g, ' ')
+      .replace(/['']/g, '')       // strip apostrophes
+      .replace(/[^a-z0-9\s]/g, ' ')  // punctuation to spaces
       .replace(/\s+/g, ' ').trim();
   }
 
+  function stripPlatform(name) {
+    return normalize(name)
+      .replace(/\b(bing|google|meta|fb|linkedin|ads)\b/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+  }
+
+  // Extract keywords from parenthetical like "(Portland)" to use as extra match signal
+  function extractParenKeywords(name) {
+    const m = name.match(/\(([^)]+)\)/g);
+    if (!m) return [];
+    return m.map(p => stripPlatform(p.replace(/[()]/g, ''))).filter(k => k.length > 2);
+  }
+
+  function getWords(s) {
+    return stripPlatform(s).split(/\s+/).filter(w => w.length > 1);
+  }
+
+  // Compute how many words from the shorter name appear (or partially appear) in the longer
+  function wordOverlap(wordsA, wordsB) {
+    let hits = 0;
+    const shorter = wordsA.length <= wordsB.length ? wordsA : wordsB;
+    const longer = wordsA.length <= wordsB.length ? wordsB : wordsA;
+    const longerStr = longer.join(' ');
+    shorter.forEach(w => {
+      // Exact word match or one contains the other (handles "bloom"/"abloom")
+      if (longer.some(lw => lw === w || lw.includes(w) || w.includes(lw))) hits++;
+    });
+    return shorter.length > 0 ? hits / shorter.length : 0;
+  }
+
   function findBudgetFuzzy(budgetMap, accountName) {
-    const nameLower = accountName.toLowerCase();
+    const nameNorm = normalize(accountName);
     const nameCore = stripPlatform(accountName);
-    // Try substring matching
+    const nameWords = getWords(accountName);
+    let bestMatch = null;
+    let bestScore = 0;
+
     for (const [key, val] of Object.entries(budgetMap)) {
-      if (nameLower.includes(key) || key.includes(nameLower)) return val;
-      // Try without parenthetical
-      const baseKey = key.replace(/\s*\(.*?\)\s*/g, '').trim();
-      const baseName = nameLower.replace(/\s*\(.*?\)\s*/g, '').trim();
-      if (baseName === baseKey || baseName.includes(baseKey) || baseKey.includes(baseName)) return val;
-      // Try with platform-stripped core names
+      const keyNorm = normalize(key);
       const keyCore = stripPlatform(key);
-      if (keyCore.length > 3 && nameCore.length > 3) {
-        if (nameCore.includes(keyCore) || keyCore.includes(nameCore)) return val;
+      const keyWords = getWords(key);
+      let score = 0;
+
+      // Exact normalized match
+      if (nameNorm === keyNorm) return val;
+
+      // Core match (platform-stripped)
+      if (nameCore === keyCore) { score = 100; }
+      // Core substring
+      else if (keyCore.length > 3 && nameCore.length > 3) {
+        if (nameCore.includes(keyCore)) score = 80;
+        else if (keyCore.includes(nameCore)) score = 70;
+      }
+
+      // Word overlap scoring — handles partial name matches
+      if (score === 0 && keyWords.length > 0 && nameWords.length > 0) {
+        const overlap = wordOverlap(keyWords, nameWords);
+        if (overlap >= 0.5) score = Math.round(overlap * 60); // 30-60 range
+      }
+
+      // Boost/penalize based on parenthetical keywords — e.g. "(Portland)" in budget
+      // should prefer "Williams Flower & Gift - Portland" over "Williams Flowers"
+      const parenKws = extractParenKeywords(key);
+      if (parenKws.length > 0 && score > 0) {
+        const nameCheck = normalize(accountName);
+        const allFound = parenKws.every(kw => nameCheck.includes(kw));
+        if (allFound) score += 25;
+        else score -= 40; // parenthetical keyword NOT in account name = bad match
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        bestMatch = val;
       }
     }
-    return null;
+    return bestScore >= 30 ? bestMatch : null;
   }
 
   function slugify(name) {
@@ -721,14 +779,16 @@
       });
     });
 
-    // Updated time
-    const times = [
-      state.budgets ? state.budgets.last_updated : null,
-      pData ? pData.last_updated : null
-    ].filter(Boolean);
-    if (times.length > 0) {
-      const latest = new Date(Math.max(...times.map(t => new Date(t))));
-      updatedAt.textContent = `Last updated: ${latest.toLocaleString()}`;
+    // Updated time — show both ad data and budget fetch times
+    const parts = [];
+    if (pData && pData.last_updated) {
+      parts.push('Ad data: ' + new Date(pData.last_updated).toLocaleString());
+    }
+    if (state.budgets && state.budgets.last_updated) {
+      parts.push('Budgets: ' + new Date(state.budgets.last_updated).toLocaleString());
+    }
+    if (parts.length > 0) {
+      updatedAt.textContent = parts.join('  •  ');
     }
     if (!clientFilter) {
       headerSubtitle.textContent = `${PLATFORM_LABELS[platform]} — ${rows.length} accounts`;
