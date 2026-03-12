@@ -466,7 +466,7 @@
     };
   }
 
-  // --- Comparison (YoY or MoM) ---
+  // --- Comparison (YoY or MoM) using projected EOM ---
   function calcComparison(row) {
     const isEcommerce = row.client_type === 'ecommerce';
     const metricKey = isEcommerce ? 'revenue' : 'conversions';
@@ -488,14 +488,25 @@
 
     const currentVal = row.current ? (row.current[metricKey] || 0) : 0;
     const priorVal = compareData[metricKey] || 0;
-    const change = priorVal > 0 ? (currentVal - priorVal) / priorVal : 0;
+
+    // Project current partial-month value to end-of-month
+    const now = new Date();
+    const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+    const dayOfMonth = now.getDate();
+    const pctMonth = dayOfMonth / daysInMonth;
+    const projectedVal = pctMonth > 0 ? currentVal / pctMonth : 0;
+
+    // Compare projected EOM vs prior full month
+    const change = priorVal > 0 ? (projectedVal - priorVal) / priorVal : 0;
 
     return {
       metricLabel,
       metricKey,
       currentVal,
+      projectedVal,
       priorVal,
       change,
+      pctMonth,
       period, // 'annual' or 'monthly'
       periodLabel: period === 'annual' ? 'vs Prior Year' : 'vs Prior Month'
     };
@@ -619,12 +630,16 @@
         const arrow = comp.change >= 0 ? '▲' : '▼';
         const changeClass = comp.change >= 0 ? 'compare-up' : 'compare-down';
         const changePct = (Math.abs(comp.change) * 100).toFixed(1) + '%';
-        const currentFmt = comp.metricKey === 'revenue' ? '$' + fmt(comp.currentVal) : fmtInt(comp.currentVal);
-        const priorFmt = comp.metricKey === 'revenue' ? '$' + fmt(comp.priorVal) : fmtInt(comp.priorVal);
+        const isMoney = comp.metricKey === 'revenue';
+        const mtdFmt = isMoney ? '$' + fmt(comp.currentVal) : fmtInt(comp.currentVal);
+        const projFmt = isMoney ? '$' + fmt(comp.projectedVal) : fmtInt(comp.projectedVal);
+        const priorFmt = isMoney ? '$' + fmt(comp.priorVal) : fmtInt(comp.priorVal);
+        const pctThru = (comp.pctMonth * 100).toFixed(0);
 
         html += `<td>
           <span class="${changeClass}">${arrow} ${changePct}</span>
-          <span class="compare-label">${comp.metricLabel}: ${currentFmt} ${comp.periodLabel} (${priorFmt})</span>
+          <span class="compare-label">Proj: ${projFmt} ${comp.periodLabel} (${priorFmt})</span>
+          <span class="compare-label" style="opacity:0.6">MTD: ${mtdFmt} (${pctThru}% of month)</span>
         </td>`;
       } else {
         html += `<td><span class="compare-label">No comparison data</span></td>`;
