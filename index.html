@@ -195,6 +195,14 @@
   .compare-neutral { color: var(--text-muted); }
   .compare-label { font-size: 10px; color: var(--text-muted); display: block; }
 
+  .proj-delta { display: block; font-size: 0.75rem; font-weight: 600; }
+  .delta-over { color: var(--red); }
+  .delta-under { color: var(--orange); }
+  .delta-on { color: var(--green); }
+
+  .daily-increase { display: block; color: var(--green); font-weight: 600; }
+  .daily-decrease { display: block; color: var(--red); font-weight: 600; }
+
   .money { text-align: right; }
   .num { text-align: right; }
 
@@ -547,6 +555,20 @@
         const pb = calcPacing(b);
         va = pa ? pa.projected : 0;
         vb = pb ? pb.projected : 0;
+      } else if (state.sortCol === 'daily_target') {
+        const pa = calcPacing(a);
+        const pb = calcPacing(b);
+        if (pa && pb) {
+          const now = new Date();
+          const dim = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+          const dom = now.getDate();
+          const rem = dim - dom;
+          va = rem > 0 ? (pa.budget - pa.spent) / rem : 0;
+          vb = rem > 0 ? (pb.budget - pb.spent) / rem : 0;
+        } else {
+          va = pa ? 1 : 0;
+          vb = pb ? 1 : 0;
+        }
       } else if (state.sortCol === 'comparison') {
         const ca = calcComparison(a);
         const cb = calcComparison(b);
@@ -580,6 +602,7 @@
         <th data-col="spent" class="money">MTD Spend${sortIcon('spent')}</th>
         <th data-col="pacing" class="pacing-cell">Pacing${sortIcon('pacing')}</th>
         <th data-col="projected" class="money">Projected${sortIcon('projected')}</th>
+        <th data-col="daily_target" class="money">Daily Target${sortIcon('daily_target')}</th>
         <th data-col="comparison">Performance${sortIcon('comparison')}</th>
       </tr></thead><tbody>`;
 
@@ -617,10 +640,43 @@
         html += `<td class="pacing-cell"><span class="pacing-sub">No budget set</span></td>`;
       }
 
-      // Projected
+      // Projected + over/under indicator
       if (pacing) {
         const projColor = pacing.status === 'over' ? 'color:var(--red)' : pacing.status === 'under' ? 'color:var(--orange)' : '';
-        html += `<td class="money" style="${projColor}">$${fmt(pacing.projected)}</td>`;
+        const delta = pacing.projected - pacing.budget;
+        const deltaAbs = Math.abs(delta);
+        const deltaSign = delta >= 0 ? '+' : '−';
+        const deltaClass = delta > 0 ? 'delta-over' : delta < 0 ? 'delta-under' : 'delta-on';
+        html += `<td class="money" style="${projColor}">
+          $${fmt(pacing.projected)}
+          <span class="proj-delta ${deltaClass}">${deltaSign}$${fmt(deltaAbs)}</span>
+        </td>`;
+      } else {
+        html += `<td class="money">—</td>`;
+      }
+
+      // Daily Target to get back on pace
+      if (pacing) {
+        const now = new Date();
+        const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+        const dayOfMonth = now.getDate();
+        const daysRemaining = daysInMonth - dayOfMonth;
+        const remaining = pacing.budget - pacing.spent;
+
+        if (daysRemaining > 0) {
+          const dailyTarget = remaining / daysRemaining;
+          const currentDaily = dayOfMonth > 0 ? pacing.spent / dayOfMonth : 0;
+          const dailyDiff = dailyTarget - currentDaily;
+          const needsIncrease = dailyDiff > 0;
+          const targetClass = needsIncrease ? 'daily-increase' : 'daily-decrease';
+          const diffSign = needsIncrease ? '▲' : '▼';
+          html += `<td class="money">
+            <span class="${targetClass}">$${fmt(dailyTarget)}/day</span>
+            <span class="${targetClass}" style="font-size:0.75rem">${diffSign} $${fmt(Math.abs(dailyDiff))}/day</span>
+          </td>`;
+        } else {
+          html += `<td class="money"><span class="compare-label">Last day</span></td>`;
+        }
       } else {
         html += `<td class="money">—</td>`;
       }
