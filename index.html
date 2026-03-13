@@ -203,6 +203,18 @@
   .daily-increase { display: block; color: var(--green); font-weight: 600; }
   .daily-decrease { display: block; color: var(--red); font-weight: 600; }
 
+  .section-divider td {
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 10px 12px 6px;
+    border-bottom: 2px solid var(--border);
+    border-top: 2px solid var(--border);
+  }
+
   .money { text-align: right; }
   .num { text-align: right; }
 
@@ -641,8 +653,19 @@
       return 0;
     });
 
-    // Summary stats
-    renderSummary(rows);
+    // Split rows into 3 groups
+    const activeRows = rows.filter(r => {
+      const spent = r.current ? r.current.cost : 0;
+      return spent > 0 && r.monthly_budget != null;
+    });
+    const noSpendRows = rows.filter(r => {
+      const spent = r.current ? r.current.cost : 0;
+      return spent === 0 && r.monthly_budget != null;
+    });
+    const noBudgetRows = rows.filter(r => r.monthly_budget == null);
+
+    // Summary stats (only active rows count)
+    renderSummary(activeRows);
 
     // Table
     if (rows.length === 0) {
@@ -651,6 +674,7 @@
     }
 
     const sortIcon = (col) => state.sortCol === col ? (state.sortDir === 'asc' ? ' ▲' : ' ▼') : '';
+    const colCount = 8;
 
     let html = `<table>
       <thead><tr>
@@ -664,7 +688,15 @@
         <th data-col="comparison">Performance${sortIcon('comparison')}</th>
       </tr></thead><tbody>`;
 
-    rows.forEach(row => {
+    function renderRowGroup(groupRows, sectionLabel) {
+      if (groupRows.length === 0) return;
+      if (sectionLabel) {
+        html += `<tr class="section-divider"><td colspan="${colCount}">${sectionLabel} (${groupRows.length})</td></tr>`;
+      }
+      groupRows.forEach(row => { renderRow(row); });
+    }
+
+    function renderRow(row) {
       const pacing = calcPacing(row);
       const comp = calcComparison(row);
 
@@ -760,7 +792,11 @@
       }
 
       html += `</tr>`;
-    });
+    }
+
+    renderRowGroup(activeRows, null);
+    renderRowGroup(noSpendRows, '⏸ No MTD Spend');
+    renderRowGroup(noBudgetRows, '⚠ Not in Budget Sheet');
 
     html += '</tbody></table>';
     tableContainer.innerHTML = html;
