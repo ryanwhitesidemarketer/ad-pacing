@@ -3,7 +3,7 @@
   "current_month": "2026-03",
   "prior_year_month": "2025-03",
   "prior_month": "2026-02",
-  "last_updated": "2026-03-14T09:49:10Z",
+  "last_updated": "2026-03-15T09:25:01Z",
   "accounts": {
     "accel-conceptions": {
       "name": "546436166954705",
@@ -110,6 +110,24 @@
         "impressions": 27813,
         "clicks": 333,
         "conversions": 19,
+        "revenue": 1126.76
+      }
+    },
+    "bedford-village-flower-shoppe": {
+      "name": "Bedford Village Flower Shoppe",
+      "current": {
+        "cost": 199.24,
+        "impressions": 10680,
+        "clicks": 160,
+        "conversions": 3.0,
+        "revenue": 285.12
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 431.82,
+        "impressions": 27813,
+        "clicks": 333,
+        "conversions": 19.0,
         "revenue": 1126.76
       }
     },
@@ -257,6 +275,24 @@
         "revenue": 0.0
       }
     },
+    "comc": {
+      "name": "COMC - Central Ohio Mobile Consortium",
+      "current": {
+        "cost": 2.99,
+        "impressions": 560,
+        "clicks": 11,
+        "conversions": 0.0,
+        "revenue": 0.0
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 23.05,
+        "impressions": 5368,
+        "clicks": 92,
+        "conversions": 0.0,
+        "revenue": 0.0
+      }
+    },
     "connectors-only": {
       "name": "ConnectorsOnly.com",
       "current": {
@@ -341,6 +377,24 @@
       "prior_year": null,
       "prior_month": null
     },
+    "fizzy": {
+      "name": "FiZZY",
+      "current": {
+        "cost": 141.06,
+        "impressions": 16526,
+        "clicks": 157,
+        "conversions": 3.0,
+        "revenue": 275.45
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 584.55,
+        "impressions": 50803,
+        "clicks": 1229,
+        "conversions": 9,
+        "revenue": 1124.93
+      }
+    },
     "flowerama": {
       "name": "Flowerama Columbus",
       "current": {
@@ -356,6 +410,24 @@
         "impressions": 60888,
         "clicks": 515,
         "conversions": 75,
+        "revenue": 9659.66
+      }
+    },
+    "flowerama-columbus": {
+      "name": "Flowerama Columbus",
+      "current": {
+        "cost": 413.09,
+        "impressions": 54199,
+        "clicks": 459,
+        "conversions": 28.0,
+        "revenue": 3473.62
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 486.77,
+        "impressions": 60888,
+        "clicks": 515,
+        "conversions": 75.0,
         "revenue": 9659.66
       }
     },
@@ -431,6 +503,24 @@
         "revenue": 0.0
       }
     },
+    "joyful-family-surrogacy": {
+      "name": "20513779",
+      "current": {
+        "cost": 4.13,
+        "impressions": 109,
+        "clicks": 4,
+        "conversions": 0.0,
+        "revenue": 0.0
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 256.03,
+        "impressions": 6263,
+        "clicks": 148,
+        "conversions": 0.0,
+        "revenue": 0.0
+      }
+    },
     "joyful-family-surrogacy-jfs": {
       "name": "20513779",
       "current": {
@@ -483,6 +573,24 @@
         "clicks": 448,
         "conversions": 0,
         "revenue": 0
+      }
+    },
+    "locksetsonly": {
+      "name": "LocksetsOnly.com",
+      "current": {
+        "cost": 56.47,
+        "impressions": 3011,
+        "clicks": 32,
+        "conversions": 2.0,
+        "revenue": 293.76
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 111.03,
+        "impressions": 9066,
+        "clicks": 134,
+        "conversions": 12.0,
+        "revenue": 770.36
       }
     },
     "longmont-florist": {
@@ -567,6 +675,24 @@
         "clicks": 860,
         "conversions": 92,
         "revenue": 13210.21
+      }
+    },
+    "polites-florist": {
+      "name": "Polites Florist",
+      "current": {
+        "cost": 41.67,
+        "impressions": 4423,
+        "clicks": 33,
+        "conversions": 5.0,
+        "revenue": 301.95
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 83.1,
+        "impressions": 8586,
+        "clicks": 71,
+        "conversions": 31.0,
+        "revenue": 1564.75
       }
     },
     "radebaugh": {
@@ -659,6 +785,24 @@
         "revenue": 8198.65
       }
     },
+    "stairpartsonly": {
+      "name": "StairpartsOnly.com",
+      "current": {
+        "cost": 27.47,
+        "impressions": 2625,
+        "clicks": 68,
+        "conversions": 0.0,
+        "revenue": 0.0
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 54.87,
+        "impressions": 5524,
+        "clicks": 68,
+        "conversions": 3.0,
+        "revenue": 8198.65
+      }
+    },
     "teambuildr": {
       "name": "TeamBuildr",
       "current": {
@@ -675,6 +819,24 @@
         "clicks": 778,
         "conversions": 0,
         "revenue": 0
+      }
+    },
+    "the-creative-kitchen-co": {
+      "name": "The Creative Kitchen Co.",
+      "current": {
+        "cost": 460.29,
+        "impressions": 15471,
+        "clicks": 328,
+        "conversions": 2.0,
+        "revenue": 0.0
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 998.4,
+        "impressions": 38568,
+        "clicks": 857,
+        "conversions": 10.0,
+        "revenue": 0.0
       }
     },
     "the-creative-kitchen-tck": {
