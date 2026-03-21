@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T08:36:51Z",
+  "last_updated": "2026-03-21T10:56:53Z",
   "month": "2026-03",
   "source": "TWM PPC Pacing Sheet - This Month tab",
   "budgets": [
@@ -64,16 +64,16 @@
       "monthly_budget": 1000
     },
     {
-      "client_name": "AW Law Ohio - normally 2250",
-      "platform": "google_ads",
-      "client_type": "lead_gen",
-      "monthly_budget": 2250
-    },
-    {
       "client_name": "AW Law Ohio (FB Ads) - normally 250",
       "platform": "meta_ads",
       "client_type": "lead_gen",
       "monthly_budget": 250
+    },
+    {
+      "client_name": "AW Law Ohio - normally 2250",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2250
     },
     {
       "client_name": "AW Law Pennsylvania - normally 1500",
@@ -190,7 +190,7 @@
       "monthly_budget": 500
     },
     {
-      "client_name": "Chestnutt Law Firm FB Ads (Account:Carl Downey)  - Campaigns with TWM",
+      "client_name": "Chestnutt Law Firm FB Ads (Account:Carl Downey) - Campaigns with",
       "platform": "meta_ads",
       "client_type": "lead_gen",
       "monthly_budget": 750
@@ -250,6 +250,18 @@
       "monthly_budget": 500
     },
     {
+      "client_name": "Creative Kitchen Co. (TCK) FB Ads",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "Creative Kitchen Co. (TCK) Google Ads",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 3000
+    },
+    {
       "client_name": "Dave Fox",
       "platform": "google_ads",
       "client_type": "lead_gen",
@@ -278,6 +290,24 @@
       "platform": "meta_ads",
       "client_type": "ecommerce",
       "monthly_budget": 1750
+    },
+    {
+      "client_name": "Fairfax Surrogacy (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Fairfax Surrogacy Google Ads",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 18000
+    },
+    {
+      "client_name": "Five Keys HOA",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1500
     },
     {
       "client_name": "Flower Box Florist (Houston)",
@@ -316,6 +346,18 @@
       "monthly_budget": 500
     },
     {
+      "client_name": "GCAC (Grant)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 10000
+    },
+    {
+      "client_name": "GCAC (Regular)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
       "client_name": "Hall's Flowers",
       "platform": "google_ads",
       "client_type": "ecommerce",
@@ -334,10 +376,46 @@
       "monthly_budget": 500
     },
     {
+      "client_name": "Highland District Hospital - Display",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 250
+    },
+    {
+      "client_name": "Highland District Hospital - Search",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 3000
+    },
+    {
       "client_name": "Hody & emma's Florist Google Ads",
       "platform": "google_ads",
       "client_type": "ecommerce",
       "monthly_budget": 6000
+    },
+    {
+      "client_name": "JCC Columbus FB Ads",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "JCC Columbus Google Ads",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "JFS Surrogacy FB Ads",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 4000
+    },
+    {
+      "client_name": "JGK Law Google Ads",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2500
     },
     {
       "client_name": "Karen's Florist Bing Ads",
@@ -358,16 +436,34 @@
       "monthly_budget": 2000
     },
     {
-      "client_name": "LightUpColumbus  FB ads (added $250/mo more)",
+      "client_name": "Ken Kline - Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Kenneth Kline",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "LightUpColumbus FB ads (added $250/mo more)",
       "platform": "meta_ads",
       "client_type": "lead_gen",
       "monthly_budget": 600
     },
     {
-      "client_name": "LightUpColumbus  Google Ads (added $250/mo more)",
+      "client_name": "LightUpColumbus Google Ads (added $250/mo more)",
       "platform": "google_ads",
       "client_type": "lead_gen",
       "monthly_budget": 1400
+    },
+    {
+      "client_name": "Lily Baby Surrogacy (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 6000
     },
     {
       "client_name": "LockSets Only (FB Ads)",
@@ -398,6 +494,30 @@
       "platform": "google_ads",
       "client_type": "lead_gen",
       "monthly_budget": 12750
+    },
+    {
+      "client_name": "Midwest Bayless",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Monroe Florist ** change to $3k for April.",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 3000
+    },
+    {
+      "client_name": "Murrieta VIP Florist (FB ads)",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 200
+    },
+    {
+      "client_name": "Murrieta VIP Florist (Google)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2000
     },
     {
       "client_name": "Nancy's Floral (FB Ads)",
@@ -448,6 +568,12 @@
       "monthly_budget": 325
     },
     {
+      "client_name": "Radebaugh Google Ads *$11,804 for month in total",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 10479
+    },
+    {
       "client_name": "Rainbow Florists",
       "platform": "google_ads",
       "client_type": "ecommerce",
@@ -470,6 +596,12 @@
       "platform": "google_ads",
       "client_type": "ecommerce",
       "monthly_budget": 25000
+    },
+    {
+      "client_name": "Sedalia Dental",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 3000
     },
     {
       "client_name": "Society of American Florists (SAF) (FB Ads)",
@@ -532,16 +664,34 @@
       "monthly_budget": 3500
     },
     {
-      "client_name": "The Bellepoint Company FB Ads",
-      "platform": "meta_ads",
-      "client_type": "lead_gen",
-      "monthly_budget": 100
+      "client_name": "The Flower Shop of Iowa",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 500
     },
     {
-      "client_name": "The Bellepoint Company Google Ads",
+      "client_name": "Tim's Touch Florist",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "Whitehall Dental Google Ads",
       "platform": "google_ads",
       "client_type": "lead_gen",
-      "monthly_budget": 1000
+      "monthly_budget": 750
+    },
+    {
+      "client_name": "Wild Doves (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Wild Doves Google Ads (in May '25, move to $750 total)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 250
     },
     {
       "client_name": "Wiliams Flowers (Portland) Bing Ads",
