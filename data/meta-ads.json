@@ -3,7 +3,7 @@
   "current_month": "2026-03",
   "prior_year_month": "2025-03",
   "prior_month": "2026-02",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-23",
   "accounts": {
     "4-seasons": {
       "name": "4 Seasons",
@@ -30,13 +30,13 @@
       }
     },
     "accel-conceptions": {
-      "name": "Accel Conceptions",
+      "name": "Accel Conceptions Inc.",
       "current": {
-        "cost": 6790.32,
-        "impressions": 765900,
-        "clicks": 7971,
-        "conversions": 0.0,
-        "revenue": 0.0
+        "cost": 7116.75,
+        "impressions": 803162,
+        "clicks": 8299,
+        "conversions": 0,
+        "revenue": 0
       },
       "prior_year": {
         "cost": 0,
@@ -49,8 +49,8 @@
         "cost": 6560.08,
         "impressions": 936983,
         "clicks": 11369,
-        "conversions": 0.0,
-        "revenue": 0.0
+        "conversions": 0,
+        "revenue": 0
       }
     },
     "aebersold-florist": {
@@ -342,13 +342,13 @@
       }
     },
     "ccad": {
-      "name": "CCAD",
+      "name": "Columbus College of Art & Design",
       "current": {
-        "cost": 324.35,
-        "impressions": 42650,
-        "clicks": 1831,
-        "conversions": 0.0,
-        "revenue": 0.0
+        "cost": 342.04,
+        "impressions": 45326,
+        "clicks": 1958,
+        "conversions": 0,
+        "revenue": 0
       },
       "prior_year": {
         "cost": 0,
@@ -361,8 +361,8 @@
         "cost": 697.42,
         "impressions": 98428,
         "clicks": 2732,
-        "conversions": 0.0,
-        "revenue": 0.0
+        "conversions": 0,
+        "revenue": 0
       }
     },
     "champion-propane": {
@@ -433,30 +433,6 @@
         "cost": 1093.18,
         "impressions": 323475,
         "clicks": 4127,
-        "conversions": 0.0,
-        "revenue": 0.0
-      }
-    },
-    "competitor-swim": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 6.39,
-        "impressions": 693,
-        "clicks": 14,
         "conversions": 0.0,
         "revenue": 0.0
       }
@@ -582,7 +558,7 @@
       }
     },
     "fizzy": {
-      "name": "FiZZY",
+      "name": "Fizzy",
       "current": {
         "cost": 141.06,
         "impressions": 16526,
@@ -1061,30 +1037,6 @@
         "revenue": 1564.75
       }
     },
-    "pozitivf": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 6.39,
-        "impressions": 693,
-        "clicks": 14,
-        "conversions": 0,
-        "revenue": 0.0
-      }
-    },
     "radebaugh": {
       "name": "Radebaugh",
       "current": {
@@ -1157,30 +1109,6 @@
         "revenue": 26487.51
       }
     },
-    "saf": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 1098.88,
-        "impressions": 85102,
-        "clicks": 3122,
-        "conversions": 0.0,
-        "revenue": 0.0
-      }
-    },
     "sports-imports": {
       "name": "Sports Imports",
       "current": {
@@ -1205,14 +1133,14 @@
         "revenue": 5822.34
       }
     },
-    "stairparts": {
-      "name": "StairParts",
+    "stair-parts": {
+      "name": "StairpartsOnly.com",
       "current": {
-        "cost": 41.22,
-        "impressions": 3971,
-        "clicks": 94,
-        "conversions": 1.0,
-        "revenue": 275.77
+        "cost": 43.63,
+        "impressions": 4157,
+        "clicks": 97,
+        "conversions": 0,
+        "revenue": 0
       },
       "prior_year": {
         "cost": 0,
@@ -1225,8 +1153,32 @@
         "cost": 54.87,
         "impressions": 5524,
         "clicks": 68,
-        "conversions": 3.0,
-        "revenue": 8198.65
+        "conversions": 0,
+        "revenue": 0
+      }
+    },
+    "stairparts": {
+      "name": "StairpartsOnly.com",
+      "current": {
+        "cost": 43.63,
+        "impressions": 4157,
+        "clicks": 97,
+        "conversions": 0,
+        "revenue": 0
+      },
+      "prior_year": {
+        "cost": 0,
+        "impressions": 0,
+        "clicks": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      "prior_month": {
+        "cost": 54.87,
+        "impressions": 5524,
+        "clicks": 68,
+        "conversions": 0,
+        "revenue": 0
       }
     },
     "stairpartsonly": {

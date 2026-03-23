@@ -3,7 +3,7 @@
   "current_month": "2026-03",
   "prior_year_month": "2025-03",
   "prior_month": "2026-02",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-23",
   "accounts": {
     "4-seasons": {
       "name": "4 Seasons",
@@ -75,30 +75,6 @@
         "clicks": 1847,
         "conversions": 113.0,
         "revenue": 4726.160000000001
-      }
-    },
-    "adam-smallow": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 1497.47,
-        "impressions": 191592,
-        "clicks": 7317,
-        "conversions": 86.01,
-        "revenue": 0.0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
       }
     },
     "aebersold": {
@@ -557,30 +533,6 @@
         "revenue": 7654.79
       }
     },
-    "bsi": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      }
-    },
     "ccad": {
       "name": "CCAD",
       "current": {
@@ -965,102 +917,6 @@
         "revenue": 0.0
       }
     },
-    "flower-box": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 1058.46,
-        "impressions": 16629,
-        "clicks": 600,
-        "conversions": 28.0,
-        "revenue": 4261.68
-      }
-    },
-    "flower-box-florist": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 1058.46,
-        "impressions": 16629,
-        "clicks": 600,
-        "conversions": 28.0,
-        "revenue": 4261.68
-      }
-    },
-    "flower-box-florist-houston": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 1058.46,
-        "impressions": 16629,
-        "clicks": 600,
-        "conversions": 28.0,
-        "revenue": 4261.68
-      }
-    },
-    "flower-box-houston": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0.0,
-        "impressions": 16629,
-        "clicks": 600,
-        "conversions": 28.0,
-        "revenue": 0.0
-      }
-    },
     "flower-shop-iowa": {
       "name": "The Flower Shop of Iowa",
       "current": {
@@ -1083,30 +939,6 @@
         "clicks": 136,
         "conversions": 11.0,
         "revenue": 0.0
-      }
-    },
-    "flowerama": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
       }
     },
     "gcac": {
@@ -1757,30 +1589,6 @@
         "revenue": 169735.1
       }
     },
-    "planthropy": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      }
-    },
     "polites": {
       "name": "Polites",
       "current": {
@@ -1829,30 +1637,6 @@
         "revenue": 21662.850000000002
       }
     },
-    "pozitivf": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      }
-    },
     "radebaugh": {
       "name": "Radebaugh",
       "current": {
@@ -1899,30 +1683,6 @@
         "clicks": 4260,
         "conversions": 536.03,
         "revenue": 76594.20000000001
-      }
-    },
-    "rainbow-florist": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
       }
     },
     "rockcastle": {
@@ -2067,30 +1827,6 @@
         "clicks": 4192,
         "conversions": 41.21,
         "revenue": 7224.31
-      }
-    },
-    "stronger-together": {
-      "name": "Unknown Account",
-      "current": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_year": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
-      },
-      "prior_month": {
-        "cost": 0,
-        "impressions": 0,
-        "clicks": 0,
-        "conversions": 0,
-        "revenue": 0
       }
     },
     "teambuildr": {

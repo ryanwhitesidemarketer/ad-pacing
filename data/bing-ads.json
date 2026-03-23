@@ -3,14 +3,14 @@
   "current_month": "2026-03",
   "prior_year_month": "2025-03",
   "prior_month": "2026-02",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-23",
   "accounts": {
     "all-a-bloom": {
-      "name": "All A Bloom",
+      "name": "All A'Bloom Flower Design",
       "current": {
-        "cost": 1134.95,
-        "impressions": 6192,
-        "clicks": 296,
+        "cost": 1153.81,
+        "impressions": 6376,
+        "clicks": 302,
         "conversions": 30.0,
         "revenue": 4692.62
       },
@@ -54,11 +54,11 @@
       }
     },
     "anaheim-hills": {
-      "name": "Anaheim Hills",
+      "name": "Anaheim Hills Florist",
       "current": {
-        "cost": 110.37,
-        "impressions": 614,
-        "clicks": 33,
+        "cost": 112.31,
+        "impressions": 692,
+        "clicks": 35,
         "conversions": 0.0,
         "revenue": 0.0
       },
@@ -102,11 +102,11 @@
       }
     },
     "bedford-village": {
-      "name": "Bedford Village",
+      "name": "Bedford Village Flower Shoppe LTD",
       "current": {
-        "cost": 684.85,
-        "impressions": 3667,
-        "clicks": 137,
+        "cost": 705.22,
+        "impressions": 3830,
+        "clicks": 142,
         "conversions": 3.0,
         "revenue": 544.96
       },
@@ -177,7 +177,7 @@
       "name": "Champion Propane",
       "current": {
         "cost": 260.92,
-        "impressions": 2162,
+        "impressions": 2166,
         "clicks": 63,
         "conversions": 6.0,
         "revenue": 0.0
@@ -222,13 +222,13 @@
       }
     },
     "flowerama": {
-      "name": "Flowerama",
+      "name": "Flowerama Columbus",
       "current": {
-        "cost": 2680.13,
-        "impressions": 9086,
-        "clicks": 705,
-        "conversions": 121.0,
-        "revenue": 13146.89
+        "cost": 2734.04,
+        "impressions": 9290,
+        "clicks": 720,
+        "conversions": 122.0,
+        "revenue": 13270.23
       },
       "prior_year": {
         "cost": 4716.66,
@@ -294,13 +294,13 @@
       }
     },
     "karen-s": {
-      "name": "Karen's",
+      "name": "Karen's Flower Shop",
       "current": {
-        "cost": 10129.28,
-        "impressions": 26308,
-        "clicks": 2550,
-        "conversions": 190.0,
-        "revenue": 41012.6
+        "cost": 10752.48,
+        "impressions": 28153,
+        "clicks": 2705,
+        "conversions": 201.0,
+        "revenue": 43397.67
       },
       "prior_year": {
         "cost": 0,
@@ -366,11 +366,11 @@
       }
     },
     "ken-kline-krk": {
-      "name": "Ken Kline KRK",
+      "name": "The Law Offices of Kenneth R. Kline LLC",
       "current": {
-        "cost": 519.78,
-        "impressions": 3318,
-        "clicks": 98,
+        "cost": 523.99,
+        "impressions": 3401,
+        "clicks": 100,
         "conversions": 6.0,
         "revenue": 0.0
       },
@@ -416,9 +416,9 @@
     "monroe-florist": {
       "name": "Monroe Florist",
       "current": {
-        "cost": 109.67,
-        "impressions": 352,
-        "clicks": 49,
+        "cost": 112.11,
+        "impressions": 359,
+        "clicks": 51,
         "conversions": 5.0,
         "revenue": 530.75
       },
@@ -462,11 +462,11 @@
       }
     },
     "murrieta-vip-florist": {
-      "name": "Murrieta VIP Florist",
+      "name": "Murrieta V.I.P. Florist",
       "current": {
-        "cost": 100.56,
-        "impressions": 556,
-        "clicks": 23,
+        "cost": 102.51,
+        "impressions": 573,
+        "clicks": 24,
         "conversions": 5.0,
         "revenue": 353.43
       },
@@ -558,13 +558,13 @@
       }
     },
     "pflorist": {
-      "name": "Pflorist",
+      "name": "Penny's by Plaza Flowers",
       "current": {
-        "cost": 1533.78,
-        "impressions": 7236,
-        "clicks": 499,
-        "conversions": 61.0,
-        "revenue": 5770.11
+        "cost": 1610.81,
+        "impressions": 7389,
+        "clicks": 514,
+        "conversions": 62.0,
+        "revenue": 5839.54
       },
       "prior_year": {
         "cost": 0,
@@ -582,11 +582,11 @@
       }
     },
     "radebaugh": {
-      "name": "Radebaugh",
+      "name": "George W Radebaugh & Sons, Inc",
       "current": {
-        "cost": 822.19,
-        "impressions": 3410,
-        "clicks": 300,
+        "cost": 826.37,
+        "impressions": 3441,
+        "clicks": 301,
         "conversions": 44.0,
         "revenue": 5824.88
       },
@@ -632,11 +632,11 @@
     "rockcastle": {
       "name": "Rockcastle Florist",
       "current": {
-        "cost": 977.93,
-        "impressions": 3627,
-        "clicks": 305,
-        "conversions": 17,
-        "revenue": 2152.8
+        "cost": 6054.43,
+        "impressions": 34447,
+        "clicks": 1530,
+        "conversions": 99.0,
+        "revenue": 17214.15
       },
       "prior_year": {
         "cost": 2934.21,
@@ -646,11 +646,11 @@
         "revenue": 11547.78
       },
       "prior_month": {
-        "cost": 2403.87,
-        "impressions": 11921,
-        "clicks": 869,
-        "conversions": 50,
-        "revenue": 6339.73
+        "cost": 12385.36,
+        "impressions": 45173,
+        "clicks": 2791,
+        "conversions": 256.0,
+        "revenue": 43051.85
       }
     },
     "rockcastle-florist": {
@@ -780,11 +780,11 @@
       }
     },
     "williams-portland": {
-      "name": "Williams Portland",
+      "name": "Williams Flower & Gift - Portland",
       "current": {
-        "cost": 3506.14,
-        "impressions": 13423,
-        "clicks": 769,
+        "cost": 3589.77,
+        "impressions": 13678,
+        "clicks": 787,
         "conversions": 71.0,
         "revenue": 9686.0
       },
@@ -806,11 +806,11 @@
     "worthpoint": {
       "name": "WorthPoint",
       "current": {
-        "cost": 1423.53,
-        "impressions": 129738,
-        "clicks": 6153,
-        "conversions": 30.0,
-        "revenue": 600.0
+        "cost": 1490.92,
+        "impressions": 135840,
+        "clicks": 6455,
+        "conversions": 32.0,
+        "revenue": 640.0
       },
       "prior_year": {
         "cost": 1401.29,
