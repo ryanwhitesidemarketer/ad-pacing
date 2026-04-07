@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-29T09:00:30Z",
-  "month": "2026-03",
+  "last_updated": "2026-04-07T13:22:55Z",
+  "month": "2026-04",
   "source": "TWM PPC Pacing Sheet - This Month tab",
   "budgets": [
     {
@@ -118,18 +118,6 @@
       "monthly_budget": 450
     },
     {
-      "client_name": "BIBIBOP FB ADS",
-      "platform": "meta_ads",
-      "client_type": "ecommerce",
-      "monthly_budget": 20400
-    },
-    {
-      "client_name": "BIBIBOP GOOGLE ADS",
-      "platform": "google_ads",
-      "client_type": "ecommerce",
-      "monthly_budget": 6800
-    },
-    {
       "client_name": "Blanca Floral",
       "platform": "google_ads",
       "client_type": "ecommerce",
@@ -158,6 +146,12 @@
       "platform": "google_ads",
       "client_type": "ecommerce",
       "monthly_budget": 2300
+    },
+    {
+      "client_name": "Bonnie Flowers (Google Ads)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 5000
     },
     {
       "client_name": "Champion Propane",
@@ -280,12 +274,6 @@
       "monthly_budget": 1750
     },
     {
-      "client_name": "Fairfax Surrogacy Google Ads",
-      "platform": "google_ads",
-      "client_type": "lead_gen",
-      "monthly_budget": 18000
-    },
-    {
       "client_name": "Flower Box Florist (Houston)",
       "platform": "google_ads",
       "client_type": "ecommerce",
@@ -397,13 +385,13 @@
       "client_name": "Longmont Bing Ads",
       "platform": "bing_ads",
       "client_type": "lead_gen",
-      "monthly_budget": 1000
+      "monthly_budget": 2000
     },
     {
       "client_name": "Longmont Google Ads",
       "platform": "google_ads",
       "client_type": "lead_gen",
-      "monthly_budget": 12750
+      "monthly_budget": 14000
     },
     {
       "client_name": "Nancy's Floral (FB Ads)",
@@ -445,25 +433,25 @@
       "client_name": "Radebaugh Bing Ads",
       "platform": "bing_ads",
       "client_type": "ecommerce",
-      "monthly_budget": 1000
+      "monthly_budget": 2000
     },
     {
       "client_name": "Radebaugh FB Ads",
       "platform": "meta_ads",
       "client_type": "ecommerce",
-      "monthly_budget": 325
+      "monthly_budget": 550
     },
     {
       "client_name": "Radebaugh Google Ads *$11,804 for month in total",
       "platform": "google_ads",
       "client_type": "ecommerce",
-      "monthly_budget": 10479
+      "monthly_budget": 13500
     },
     {
       "client_name": "Radebaugh Total",
       "platform": "google_ads",
       "client_type": "ecommerce",
-      "monthly_budget": 11804
+      "monthly_budget": 16050
     },
     {
       "client_name": "Rainbow Florists",
@@ -500,12 +488,6 @@
       "platform": "meta_ads",
       "client_type": "lead_gen",
       "monthly_budget": 900
-    },
-    {
-      "client_name": "Sports Imports (LinkedIn Ads)",
-      "platform": "linkedin_ads",
-      "client_type": "lead_gen",
-      "monthly_budget": 300
     },
     {
       "client_name": "Sports Imports Google Ads (Lead Gen + eComm)",
