@@ -1,0 +1,589 @@
+{
+  "last_updated": "2026-04-10T08:33:31Z",
+  "month": "2026-04",
+  "source": "TWM PPC Pacing Sheet - This Month tab",
+  "budgets": [
+    {
+      "client_name": "Accel Conceptions (FB Ads) - CA 30% budget)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 6000
+    },
+    {
+      "client_name": "Accel Conceptions (FB Ads) - Other (30% budget)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "Accel Conceptions (FB Ads) - Top States (70% budget)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 3000
+    },
+    {
+      "client_name": "Aebersold Florist FB Ads",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 150
+    },
+    {
+      "client_name": "Aebersold Florist Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 1500
+    },
+    {
+      "client_name": "Airforce Turbine Service (ATS)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 7000
+    },
+    {
+      "client_name": "All A Bloom",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 19000
+    },
+    {
+      "client_name": "All A Bloom (Bing Ads)",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "Anaheim Hills Florist (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Anaheim Hills Florist Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2500
+    },
+    {
+      "client_name": "AW Law Michigan - normally 500",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "AW Law Ohio (FB Ads) - normally 250",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 250
+    },
+    {
+      "client_name": "AW Law Ohio - normally 2250",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2250
+    },
+    {
+      "client_name": "AW Law Pennsylvania - normally 1500",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "Bear Landscaping FB Ads",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Bear Landscaping Google Ads",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 9000
+    },
+    {
+      "client_name": "Bedford Village (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Bedford Village Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 750
+    },
+    {
+      "client_name": "Bedford Village Florist",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 10750
+    },
+    {
+      "client_name": "Benjamin Martin Law (Skip Martin)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 450
+    },
+    {
+      "client_name": "Blanca Floral",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 3000
+    },
+    {
+      "client_name": "Blooming Days (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 60
+    },
+    {
+      "client_name": "Blooming Days (Google Ads)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Blooms in Bunches (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 200
+    },
+    {
+      "client_name": "Blooms in Bunches Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2300
+    },
+    {
+      "client_name": "Bonnie Flowers (Google Ads)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 5000
+    },
+    {
+      "client_name": "Champion Propane",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 4500
+    },
+    {
+      "client_name": "Champion Propane (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Champion Propane Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Chesnutt Law Firm (Search)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2750
+    },
+    {
+      "client_name": "Chesnutt Law Firm (YT)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Chestnutt Law Firm FB Ads (Account:Carl Downey)  - Campaigns with TWM",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 750
+    },
+    {
+      "client_name": "Columbus Behavioral Health",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 700
+    },
+    {
+      "client_name": "COMC - LinkedIn - Clinician (Patient) Target",
+      "platform": "linkedin_ads",
+      "client_type": "unknown",
+      "monthly_budget": 725
+    },
+    {
+      "client_name": "COMC - LinkedIn - Professional ( Target",
+      "platform": "linkedin_ads",
+      "client_type": "unknown",
+      "monthly_budget": 725
+    },
+    {
+      "client_name": "COMC - Nationwide Childrens' (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1100
+    },
+    {
+      "client_name": "COMC - Nationwide Childrens' (Google)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1100
+    },
+    {
+      "client_name": "Connectors Only (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 300
+    },
+    {
+      "client_name": "ConnectorsOnly - Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 3500
+    },
+    {
+      "client_name": "Cordova Flowers & Gifts",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 9500
+    },
+    {
+      "client_name": "Cordova Flowers & Gifts (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Dave Fox",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Dave Fox (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 400
+    },
+    {
+      "client_name": "Dottie's Flowers",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 75000
+    },
+    {
+      "client_name": "Dottie's Flowers (Bing)",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 8000
+    },
+    {
+      "client_name": "Dottie's Flowers (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 1750
+    },
+    {
+      "client_name": "Flowerama",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 30000
+    },
+    {
+      "client_name": "Flowerama (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 1500
+    },
+    {
+      "client_name": "Flowerama Bing",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 5000
+    },
+    {
+      "client_name": "Four Seasons Flowers (4 Seasons)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 7500
+    },
+    {
+      "client_name": "Four Seasons Flowers (4 Seasons) (FB Ads) (carma white)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Hall's Flowers",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 7750
+    },
+    {
+      "client_name": "Hall's Flowers (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 222
+    },
+    {
+      "client_name": "Hall's Flowers (Garden Center)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Hody & emma's Florist Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 6000
+    },
+    {
+      "client_name": "Karen's Florist Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 10000
+    },
+    {
+      "client_name": "Karen's Florist Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 80000
+    },
+    {
+      "client_name": "Karen's Florist Meta Ads (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "LightUpColumbus  FB ads (added $250/mo more)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 600
+    },
+    {
+      "client_name": "LightUpColumbus  Google Ads (added $250/mo more)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1400
+    },
+    {
+      "client_name": "LockSets Only (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 300
+    },
+    {
+      "client_name": "LocksetsOnly - Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2400
+    },
+    {
+      "client_name": "Longmont (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Longmont Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Longmont Google Ads",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 14000
+    },
+    {
+      "client_name": "Nancy's Floral (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 100
+    },
+    {
+      "client_name": "Nancy's Floral Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 3500
+    },
+    {
+      "client_name": "Ode A La Rose",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 15000
+    },
+    {
+      "client_name": "Penny's by Plaza Flowers (Bing Ads)",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 4000
+    },
+    {
+      "client_name": "Penny's by Plaza Flowers (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 1000
+    },
+    {
+      "client_name": "Penny's by Plaza Flowers (Google Ads)",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 30000
+    },
+    {
+      "client_name": "Radebaugh Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Radebaugh FB Ads",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 550
+    },
+    {
+      "client_name": "Radebaugh Google Ads *$11,804 for month in total",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 13500
+    },
+    {
+      "client_name": "Radebaugh Total",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 16050
+    },
+    {
+      "client_name": "Rainbow Florists",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Rockcastle (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2000
+    },
+    {
+      "client_name": "Rockcastle Florist Bing",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 3000
+    },
+    {
+      "client_name": "Rockcastle Florist Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 25000
+    },
+    {
+      "client_name": "Society of American Florists (SAF) (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1100
+    },
+    {
+      "client_name": "Sports Imports (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 900
+    },
+    {
+      "client_name": "Sports Imports Google Ads (Lead Gen + eComm)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 12000
+    },
+    {
+      "client_name": "Stairparts (FB Ads)",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 300
+    },
+    {
+      "client_name": "StairpartsOnly - Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 2400
+    },
+    {
+      "client_name": "Teambuildr FB Ads - OS",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Teambuildr FB Ads - Strength",
+      "platform": "meta_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 500
+    },
+    {
+      "client_name": "Teambuildr Google Ads - OS",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 2500
+    },
+    {
+      "client_name": "Teambuildr Google Ads - Strength",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 3500
+    },
+    {
+      "client_name": "Wiliams Flowers (Portland) Bing Ads",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 5000
+    },
+    {
+      "client_name": "Wiliams Flowers (Portland) Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 40000
+    },
+    {
+      "client_name": "Williams Flowers (Portland) FB Ads",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 750
+    },
+    {
+      "client_name": "Williams Flowers Bing",
+      "platform": "bing_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 15000
+    },
+    {
+      "client_name": "Williams Flowers FB Ads",
+      "platform": "meta_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 3500
+    },
+    {
+      "client_name": "Williams Flowers Google Ads",
+      "platform": "google_ads",
+      "client_type": "ecommerce",
+      "monthly_budget": 80000
+    },
+    {
+      "client_name": "WorthPoint (approx. $1500/day)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 50000
+    },
+    {
+      "client_name": "Zuercher Law (Google Ads)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1100
+    },
+    {
+      "client_name": "Zuercher Law (LSA's)",
+      "platform": "google_ads",
+      "client_type": "lead_gen",
+      "monthly_budget": 1100
+    }
+  ]
+}
