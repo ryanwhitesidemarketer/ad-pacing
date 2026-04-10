@@ -1,0 +1,162 @@
+{
+  "platform": "bing",
+  "generated_at": "2026-04-10T10:07:05.841516Z",
+  "workspaces": [
+    {
+      "slug": "all-a-bloom",
+      "workspace": "All A Bloom",
+      "current_month": {
+        "month": "2026-04",
+        "days_elapsed": 10,
+        "cost": 491.08,
+        "impressions": 2305,
+        "clicks": 144,
+        "conversions": 12.0,
+        "conversion_value": 1910.5
+      },
+      "prior_month": {
+        "month": "2026-03",
+        "cost": 1927.87,
+        "impressions": 10356,
+        "clicks": 494,
+        "conversions": 51.0,
+        "conversion_value": 7387.43
+      },
+      "pace_vs_prior_month": {
+        "projected_cost": 1473.24,
+        "projected_conversions": 36.0,
+        "on_pace_pct": 76.4
+      }
+    },
+    {
+      "slug": "bedford-village",
+      "workspace": "Bedford Village",
+      "current_month": {
+        "month": "2026-04",
+        "days_elapsed": 10,
+        "cost": 322.89,
+        "impressions": 1409,
+        "clicks": 63,
+        "conversions": 4.0,
+        "conversion_value": 1032.66
+      },
+      "prior_month": {
+        "month": "2026-03",
+        "cost": 834.71,
+        "impressions": 4950,
+        "clicks": 182,
+        "conversions": 5.0,
+        "conversion_value": 1118.26
+      },
+      "pace_vs_prior_month": {
+        "projected_cost": 968.67,
+        "projected_conversions": 12.0,
+        "on_pace_pct": 116.0
+      }
+    },
+    {
+      "slug": "champion-propane",
+      "workspace": "Champion Propane",
+      "current_month": {
+        "month": "2026-04",
+        "days_elapsed": 10,
+        "cost": 38.01,
+        "impressions": 2901,
+        "clicks": 17,
+        "conversions": 0.0,
+        "conversion_value": 0.0
+      },
+      "prior_month": {
+        "month": "2026-03",
+        "cost": 341.84,
+        "impressions": 2874,
+        "clicks": 82,
+        "conversions": 7.0,
+        "conversion_value": 0.0
+      },
+      "pace_vs_prior_month": {
+        "projected_cost": 114.03,
+        "projected_conversions": 0.0,
+        "on_pace_pct": 33.4
+      }
+    },
+    {
+      "slug": "dotties-flowers",
+      "workspace": "Dotties Flowers",
+      "current_month": {
+        "month": "2026-04",
+        "days_elapsed": 10,
+        "cost": 2855.33,
+        "impressions": 11377,
+        "clicks": 580,
+        "conversions": 46.0,
+        "conversion_value": 7486.74
+      },
+      "prior_month": {
+        "month": "2026-03",
+        "cost": 6058.79,
+        "impressions": 24815,
+        "clicks": 1480,
+        "conversions": 166.0,
+        "conversion_value": 24183.33
+      },
+      "pace_vs_prior_month": {
+        "projected_cost": 8565.99,
+        "projected_conversions": 138.0,
+        "on_pace_pct": 141.4
+      }
+    },
+    {
+      "slug": "ken-kline-krk",
+      "workspace": "Ken Kline KRK",
+      "current_month": {
+        "month": "2026-04",
+        "days_elapsed": 10,
+        "cost": 76.3,
+        "impressions": 771,
+        "clicks": 28,
+        "conversions": 1.0,
+        "conversion_value": 0.0
+      },
+      "prior_month": {
+        "month": "2026-03",
+        "cost": 574.78,
+        "impressions": 3905,
+        "clicks": 127,
+        "conversions": 11.0,
+        "conversion_value": 0.0
+      },
+      "pace_vs_prior_month": {
+        "projected_cost": 228.9,
+        "projected_conversions": 3.0,
+        "on_pace_pct": 39.8
+      }
+    },
+    {
+      "slug": "flowerama",
+      "workspace": "Flowerama",
+      "current_month": {
+        "month": "2026-04",
+        "days_elapsed": 10,
+        "cost": 1990.77,
+        "impressions": 5967,
+        "clicks": 393,
+        "conversions": 70.0,
+        "conversion_value": 6974.27
+      },
+      "prior_month": {
+        "month": "2026-03",
+        "cost": 4435.9,
+        "impressions": 15695,
+        "clicks": 1113,
+        "conversions": 170.0,
+        "conversion_value": 18974.32
+      },
+      "pace_vs_prior_month": {
+        "projected_cost": 5972.31,
+        "projected_conversions": 210.0,
+        "on_pace_pct": 134.6
+      }
+    }
+  ]
+}
