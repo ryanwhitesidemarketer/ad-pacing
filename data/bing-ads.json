@@ -3,7 +3,7 @@
   "current_month": "2026-04",
   "prior_year_month": "2025-04",
   "prior_month": "2026-03",
-  "last_updated": "2026-04-09T05:00:00Z",
+  "last_updated": "2026-04-11T09:20:52Z",
   "accounts": {
     "all-a-bloom": {
       "name": "All A'Bloom Flower Design",
@@ -347,5 +347,6 @@
         "revenue": 1000.0
       }
     }
-  }
+  },
+  "note": "Bing Ads authorization expired; data not refreshed on 2026-04-11."
 }
