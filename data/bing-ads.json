@@ -3,14 +3,14 @@
   "current_month": "2026-10",
   "prior_year_month": "2025-10",
   "prior_month": "2026-09",
-  "last_updated": "2026-10-04T06:16:50Z",
+  "last_updated": "2026-10-05T06:40:00Z",
   "accounts": {
     "flowerama": {
       "name": "Flowerama",
       "current": {
-        "cost": 448.35,
-        "impressions": 1518,
-        "clicks": 106,
+        "cost": 492.58,
+        "impressions": 1861,
+        "clicks": 117,
         "conversions": 16.0,
         "revenue": 1837.02
       },
@@ -32,11 +32,11 @@
     "karens": {
       "name": "Karen's",
       "current": {
-        "cost": 375.2,
-        "impressions": 4202,
-        "clicks": 170,
-        "conversions": 8.0,
-        "revenue": 1182.17
+        "cost": 492.33,
+        "impressions": 5551,
+        "clicks": 214,
+        "conversions": 9.0,
+        "revenue": 1292.17
       },
       "prior_year": {
         "cost": 10461.85,
@@ -56,11 +56,11 @@
     "radebaugh": {
       "name": "Radebaugh",
       "current": {
-        "cost": 114.92,
-        "impressions": 758,
-        "clicks": 35,
-        "conversions": 5.0,
-        "revenue": 659.5
+        "cost": 119.36,
+        "impressions": 823,
+        "clicks": 39,
+        "conversions": 6.0,
+        "revenue": 745.26
       },
       "prior_year": null,
       "prior_month": {
@@ -74,11 +74,11 @@
     "worthpoint": {
       "name": "WorthPoint",
       "current": {
-        "cost": 170.12,
-        "impressions": 8264,
-        "clicks": 432,
-        "conversions": 2.0,
-        "revenue": 40.0
+        "cost": 217.38,
+        "impressions": 10893,
+        "clicks": 596,
+        "conversions": 3.0,
+        "revenue": 60.0
       },
       "prior_year": {
         "cost": 1729.68,
@@ -98,9 +98,9 @@
     "ken-kline-krk": {
       "name": "Ken Kline KRK",
       "current": {
-        "cost": 81.84,
-        "impressions": 753,
-        "clicks": 13,
+        "cost": 85.24,
+        "impressions": 775,
+        "clicks": 15,
         "conversions": 0.0,
         "revenue": 0.0
       },
@@ -122,9 +122,9 @@
     "all-a-bloom": {
       "name": "All A Bloom",
       "current": {
-        "cost": 249.15,
-        "impressions": 4307,
-        "clicks": 73,
+        "cost": 281.19,
+        "impressions": 6597,
+        "clicks": 86,
         "conversions": 3.0,
         "revenue": 307.29
       },
@@ -139,16 +139,16 @@
         "cost": 3340.05,
         "impressions": 43804,
         "clicks": 805,
-        "conversions": 73.0,
-        "revenue": 10466.76
+        "conversions": 74.0,
+        "revenue": 10467.76
       }
     },
     "dotties-flowers": {
       "name": "Dotties Flowers",
       "current": {
-        "cost": 490.81,
-        "impressions": 1331,
-        "clicks": 80,
+        "cost": 690.92,
+        "impressions": 1855,
+        "clicks": 116,
         "conversions": 11.0,
         "revenue": 1797.11
       },
@@ -170,11 +170,11 @@
     "twinbrook": {
       "name": "Twinbrook",
       "current": {
-        "cost": 74.24,
-        "impressions": 569,
-        "clicks": 22,
-        "conversions": 2.0,
-        "revenue": 189.98
+        "cost": 85.33,
+        "impressions": 806,
+        "clicks": 27,
+        "conversions": 3.0,
+        "revenue": 284.97
       },
       "prior_year": null,
       "prior_month": {
@@ -188,11 +188,11 @@
     "rockcastle": {
       "name": "Rockcastle",
       "current": {
-        "cost": 380.77,
-        "impressions": 3393,
-        "clicks": 92,
-        "conversions": 10.0,
-        "revenue": 1340.82
+        "cost": 422.54,
+        "impressions": 4597,
+        "clicks": 110,
+        "conversions": 11.0,
+        "revenue": 1460.82
       },
       "prior_year": {
         "cost": 1598.85,
@@ -212,11 +212,11 @@
     "williams-portland": {
       "name": "Williams Portland",
       "current": {
-        "cost": 398.02,
-        "impressions": 3135,
-        "clicks": 80,
-        "conversions": 9.0,
-        "revenue": 1358.23
+        "cost": 440.47,
+        "impressions": 3781,
+        "clicks": 91,
+        "conversions": 11.0,
+        "revenue": 1598.23
       },
       "prior_year": {
         "cost": 5665.16,
@@ -236,9 +236,9 @@
     "champion-propane": {
       "name": "Champion Propane",
       "current": {
-        "cost": 68.86,
-        "impressions": 471,
-        "clicks": 15,
+        "cost": 70.41,
+        "impressions": 492,
+        "clicks": 17,
         "conversions": 0.0,
         "revenue": 0.0
       },
@@ -260,11 +260,11 @@
     "pflorist": {
       "name": "Pflorist",
       "current": {
-        "cost": 309.15,
-        "impressions": 3230,
-        "clicks": 87,
-        "conversions": 4.0,
-        "revenue": 379.32
+        "cost": 309.89,
+        "impressions": 3399,
+        "clicks": 88,
+        "conversions": 5.0,
+        "revenue": 499.32
       },
       "prior_year": {
         "cost": 1228.09,
@@ -284,11 +284,11 @@
     "williams-flowers": {
       "name": "Williams Flowers",
       "current": {
-        "cost": 995.67,
-        "impressions": 3065,
-        "clicks": 135,
-        "conversions": 20.0,
-        "revenue": 2725.66
+        "cost": 1063.72,
+        "impressions": 3568,
+        "clicks": 156,
+        "conversions": 21.0,
+        "revenue": 2845.66
       },
       "prior_year": {
         "cost": 11538.19,
@@ -308,9 +308,9 @@
     "longmont-florist": {
       "name": "Longmont Florist",
       "current": {
-        "cost": 56.83,
-        "impressions": 1369,
-        "clicks": 23,
+        "cost": 57.23,
+        "impressions": 1419,
+        "clicks": 24,
         "conversions": 7.0,
         "revenue": 5.0
       },
@@ -332,9 +332,9 @@
     "bedford-village": {
       "name": "Bedford Village",
       "current": {
-        "cost": 101.73,
-        "impressions": 1809,
-        "clicks": 27,
+        "cost": 102.89,
+        "impressions": 2172,
+        "clicks": 28,
         "conversions": 1.0,
         "revenue": 200.0
       },
@@ -356,11 +356,11 @@
     "ode-a-la-rose": {
       "name": "Ode a La Rose",
       "current": {
-        "cost": 2052.49,
-        "impressions": 5120,
-        "clicks": 236,
-        "conversions": 15.0,
-        "revenue": 2487.7
+        "cost": 2105.96,
+        "impressions": 5461,
+        "clicks": 249,
+        "conversions": 17.0,
+        "revenue": 2756.7
       },
       "prior_year": {
         "cost": 13910.23,
@@ -373,16 +373,16 @@
         "cost": 16175.13,
         "impressions": 46646,
         "clicks": 2329,
-        "conversions": 238.0,
-        "revenue": 41631.68
+        "conversions": 242.0,
+        "revenue": 41958.38
       }
     },
     "monroe-florist": {
       "name": "Monroe Florist",
       "current": {
-        "cost": 42.67,
-        "impressions": 143,
-        "clicks": 13,
+        "cost": 45.64,
+        "impressions": 154,
+        "clicks": 14,
         "conversions": 4.0,
         "revenue": 421.22
       },
