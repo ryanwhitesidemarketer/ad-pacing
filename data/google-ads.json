@@ -3,16 +3,16 @@
   "current_month": "2026-10",
   "prior_year_month": "2025-10",
   "prior_month": "2026-09",
-  "last_updated": "2026-10-05T06:40:00Z",
+  "last_updated": "2026-10-06T06:18:10Z",
   "accounts": {
     "balloons-n-more": {
       "name": "Balloons N More",
       "current": {
-        "cost": 268.11,
-        "impressions": 1571,
-        "clicks": 67,
-        "conversions": 10.0,
-        "revenue": 589.91
+        "cost": 323.14,
+        "impressions": 2145,
+        "clicks": 80,
+        "conversions": 13.0,
+        "revenue": 739.91
       },
       "prior_year": null,
       "prior_month": {
@@ -26,11 +26,11 @@
     "cordova-flowers": {
       "name": "Cordova Flowers",
       "current": {
-        "cost": 1094.75,
-        "impressions": 4071,
-        "clicks": 319,
-        "conversions": 42.0,
-        "revenue": 4767.35
+        "cost": 1454.23,
+        "impressions": 5043,
+        "clicks": 398,
+        "conversions": 57.0,
+        "revenue": 6324.57
       },
       "prior_year": {
         "cost": 9391.1,
@@ -43,18 +43,18 @@
         "cost": 9386.2,
         "impressions": 19167,
         "clicks": 1950,
-        "conversions": 353.0,
-        "revenue": 39239.42
+        "conversions": 348.99,
+        "revenue": 39321.42
       }
     },
     "hodys": {
       "name": "Hody's",
       "current": {
-        "cost": 311.51,
-        "impressions": 3354,
-        "clicks": 146,
-        "conversions": 10.0,
-        "revenue": 927.31
+        "cost": 549.98,
+        "impressions": 5065,
+        "clicks": 239,
+        "conversions": 17.0,
+        "revenue": 1579.53
       },
       "prior_year": {
         "cost": 3629.22,
@@ -67,16 +67,16 @@
         "cost": 6388.07,
         "impressions": 42785,
         "clicks": 2307,
-        "conversions": 228.5,
-        "revenue": 24227.33
+        "conversions": 231.5,
+        "revenue": 24763.17
       }
     },
     "stairparts": {
       "name": "StairParts",
       "current": {
-        "cost": 266.16,
-        "impressions": 20049,
-        "clicks": 376,
+        "cost": 379.58,
+        "impressions": 20767,
+        "clicks": 394,
         "conversions": 7.0,
         "revenue": 633.53
       },
@@ -98,11 +98,11 @@
     "flowerama": {
       "name": "Flowerama",
       "current": {
-        "cost": 6508.0,
-        "impressions": 63518,
-        "clicks": 1797,
-        "conversions": 152.98,
-        "revenue": 17640.67
+        "cost": 8379.07,
+        "impressions": 74572,
+        "clicks": 2221,
+        "conversions": 220.1,
+        "revenue": 21926.25
       },
       "prior_year": {
         "cost": 45487.65,
@@ -115,18 +115,18 @@
         "cost": 49152.33,
         "impressions": 307177,
         "clicks": 12260,
-        "conversions": 1913.21,
-        "revenue": 153794.9
+        "conversions": 1946.93,
+        "revenue": 154561.12
       }
     },
     "bonnie-flowers": {
       "name": "Bonnie Flowers",
       "current": {
-        "cost": 483.78,
-        "impressions": 2386,
-        "clicks": 146,
-        "conversions": 22.99,
-        "revenue": 2303.11
+        "cost": 685.39,
+        "impressions": 3237,
+        "clicks": 199,
+        "conversions": 27.99,
+        "revenue": 2612.96
       },
       "prior_year": null,
       "prior_month": {
@@ -140,11 +140,11 @@
     "karens": {
       "name": "Karen's",
       "current": {
-        "cost": 13043.35,
-        "impressions": 69629,
-        "clicks": 3464,
-        "conversions": 311.84,
-        "revenue": 55123.98
+        "cost": 18734.0,
+        "impressions": 103846,
+        "clicks": 4770,
+        "conversions": 426.84,
+        "revenue": 74849.94
       },
       "prior_year": {
         "cost": 103550.03,
@@ -157,36 +157,36 @@
         "cost": 104974.26,
         "impressions": 844449,
         "clicks": 27866,
-        "conversions": 2562.05,
-        "revenue": 395012.02
+        "conversions": 2572.05,
+        "revenue": 396132.76
       }
     },
     "radebaugh": {
       "name": "Radebaugh",
       "current": {
-        "cost": 1471.22,
-        "impressions": 6549,
-        "clicks": 523,
-        "conversions": 71.99,
-        "revenue": 9451.32
+        "cost": 2029.91,
+        "impressions": 8717,
+        "clicks": 683,
+        "conversions": 92.99,
+        "revenue": 12169.19
       },
       "prior_year": null,
       "prior_month": {
         "cost": 11483.14,
         "impressions": 40819,
         "clicks": 3319,
-        "conversions": 600.18,
-        "revenue": 76351.08
+        "conversions": 605.18,
+        "revenue": 76998.93
       }
     },
     "columbus-behavioral-health": {
       "name": "Columbus Behavioral Health",
       "current": {
-        "cost": 56.22,
-        "impressions": 530,
-        "clicks": 37,
-        "conversions": 2.0,
-        "revenue": 2.0
+        "cost": 91.83,
+        "impressions": 704,
+        "clicks": 57,
+        "conversions": 3.0,
+        "revenue": 3.0
       },
       "prior_year": {
         "cost": 694.26,
@@ -199,17 +199,17 @@
         "cost": 797.16,
         "impressions": 4136,
         "clicks": 410,
-        "conversions": 84.3,
-        "revenue": 68.3
+        "conversions": 86.3,
+        "revenue": 70.3
       }
     },
     "jgk-law": {
       "name": "JGK Law",
       "current": {
-        "cost": 167.67,
-        "impressions": 529,
-        "clicks": 21,
-        "conversions": 2.0,
+        "cost": 211.13,
+        "impressions": 609,
+        "clicks": 26,
+        "conversions": 3.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -230,10 +230,10 @@
     "metro-flower-market": {
       "name": "Metro Flower Market",
       "current": {
-        "cost": 150.26,
-        "impressions": 909,
-        "clicks": 131,
-        "conversions": 15.0,
+        "cost": 192.41,
+        "impressions": 1118,
+        "clicks": 167,
+        "conversions": 17.0,
         "revenue": 470.4
       },
       "prior_year": {
@@ -247,17 +247,17 @@
         "cost": 1223.11,
         "impressions": 4528,
         "clicks": 759,
-        "conversions": 96.24,
+        "conversions": 97.24,
         "revenue": 7243.68
       }
     },
     "worthpoint": {
       "name": "WorthPoint",
       "current": {
-        "cost": 2431.62,
-        "impressions": 59146,
-        "clicks": 1637,
-        "conversions": 41.0,
+        "cost": 3007.98,
+        "impressions": 73550,
+        "clicks": 2036,
+        "conversions": 52.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -278,11 +278,11 @@
     "midwest-bayless": {
       "name": "Midwest Bayless",
       "current": {
-        "cost": 219.15,
-        "impressions": 6472,
-        "clicks": 339,
-        "conversions": 8.07,
-        "revenue": 746.43
+        "cost": 310.55,
+        "impressions": 8345,
+        "clicks": 422,
+        "conversions": 13.15,
+        "revenue": 1311.59
       },
       "prior_year": {
         "cost": 1964.33,
@@ -295,18 +295,18 @@
         "cost": 2675.79,
         "impressions": 69800,
         "clicks": 3200,
-        "conversions": 287.99,
-        "revenue": 41814.31
+        "conversions": 297.84,
+        "revenue": 44374.53
       }
     },
     "murrieta-vip-florist": {
       "name": "Murrieta VIP Florist",
       "current": {
-        "cost": 260.98,
-        "impressions": 858,
-        "clicks": 76,
-        "conversions": 14.0,
-        "revenue": 1547.59
+        "cost": 322.07,
+        "impressions": 1045,
+        "clicks": 99,
+        "conversions": 15.0,
+        "revenue": 1753.38
       },
       "prior_year": {
         "cost": 1603.2,
@@ -326,11 +326,11 @@
     "halls-flower": {
       "name": "Halls Flower",
       "current": {
-        "cost": 567.45,
-        "impressions": 3597,
-        "clicks": 192,
-        "conversions": 16.0,
-        "revenue": 2173.95
+        "cost": 901.38,
+        "impressions": 4489,
+        "clicks": 261,
+        "conversions": 24.04,
+        "revenue": 2870.01
       },
       "prior_year": {
         "cost": 8042.31,
@@ -343,18 +343,18 @@
         "cost": 9152.08,
         "impressions": 34388,
         "clicks": 2537,
-        "conversions": 321.89,
-        "revenue": 34990.9
+        "conversions": 328.89,
+        "revenue": 34861.0
       }
     },
     "bear-landscape": {
       "name": "Bear Landscape",
       "current": {
-        "cost": 671.88,
-        "impressions": 1539,
-        "clicks": 61,
-        "conversions": 1.0,
-        "revenue": 0.0
+        "cost": 838.2,
+        "impressions": 1926,
+        "clicks": 83,
+        "conversions": 4.0,
+        "revenue": 1.0
       },
       "prior_year": {
         "cost": 4472.68,
@@ -374,11 +374,11 @@
     "4-seasons": {
       "name": "4 Seasons",
       "current": {
-        "cost": 821.14,
-        "impressions": 5431,
-        "clicks": 278,
-        "conversions": 20.99,
-        "revenue": 1956.18
+        "cost": 1026.22,
+        "impressions": 6757,
+        "clicks": 337,
+        "conversions": 28.98,
+        "revenue": 2816.59
       },
       "prior_year": {
         "cost": 6691.14,
@@ -398,11 +398,11 @@
     "ken-kline-krk": {
       "name": "Ken Kline KRK",
       "current": {
-        "cost": 434.72,
-        "impressions": 827,
-        "clicks": 47,
-        "conversions": 13.0,
-        "revenue": 2.0
+        "cost": 539.8,
+        "impressions": 1025,
+        "clicks": 69,
+        "conversions": 19.0,
+        "revenue": 3.0
       },
       "prior_year": {
         "cost": 1935.06,
@@ -422,28 +422,28 @@
     "bibibop": {
       "name": "BIBIBOP",
       "current": {
-        "cost": 9462.83,
-        "impressions": 1438507,
-        "clicks": 11408,
-        "conversions": 144.98,
-        "revenue": 4872.89
+        "cost": 11537.5,
+        "impressions": 1902266,
+        "clicks": 13838,
+        "conversions": 399.98,
+        "revenue": 9184.31
       },
       "prior_year": null,
       "prior_month": {
         "cost": 51753.09,
         "impressions": 8743050,
         "clicks": 80461,
-        "conversions": 50239.78,
-        "revenue": 182041.7
+        "conversions": 50292.7,
+        "revenue": 183163.63
       }
     },
     "whitehall-dental": {
       "name": "Whitehall Dental",
       "current": {
-        "cost": 114.65,
-        "impressions": 116,
-        "clicks": 15,
-        "conversions": 6.0,
+        "cost": 168.35,
+        "impressions": 231,
+        "clicks": 24,
+        "conversions": 9.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -464,11 +464,11 @@
     "all-a-bloom": {
       "name": "All A Bloom",
       "current": {
-        "cost": 1918.14,
-        "impressions": 10951,
-        "clicks": 623,
-        "conversions": 46.0,
-        "revenue": 6552.9
+        "cost": 2594.17,
+        "impressions": 14184,
+        "clicks": 822,
+        "conversions": 65.0,
+        "revenue": 9070.81
       },
       "prior_year": {
         "cost": 17941.11,
@@ -488,9 +488,9 @@
     "dave-fox": {
       "name": "Dave Fox",
       "current": {
-        "cost": 166.02,
-        "impressions": 399,
-        "clicks": 9,
+        "cost": 337.56,
+        "impressions": 556,
+        "clicks": 15,
         "conversions": 0.0,
         "revenue": 0.0
       },
@@ -512,9 +512,9 @@
     "light-up-columbus": {
       "name": "Light Up Columbus",
       "current": {
-        "cost": 600.57,
-        "impressions": 639,
-        "clicks": 43,
+        "cost": 773.75,
+        "impressions": 683,
+        "clicks": 49,
         "conversions": 0.0,
         "revenue": 0.0
       },
@@ -536,11 +536,11 @@
     "tims-touch-florist": {
       "name": "Tim's Touch Florist",
       "current": {
-        "cost": 99.1,
-        "impressions": 461,
-        "clicks": 31,
-        "conversions": 3.0,
-        "revenue": 272.77
+        "cost": 141.61,
+        "impressions": 646,
+        "clicks": 44,
+        "conversions": 6.0,
+        "revenue": 275.77
       },
       "prior_year": {
         "cost": 1002.71,
@@ -560,10 +560,10 @@
     "the-creative-kitchen-tck": {
       "name": "The Creative Kitchen TCK",
       "current": {
-        "cost": 397.47,
-        "impressions": 14070,
-        "clicks": 766,
-        "conversions": 14.0,
+        "cost": 448.35,
+        "impressions": 17783,
+        "clicks": 993,
+        "conversions": 26.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -584,10 +584,10 @@
     "teambuildr": {
       "name": "TeamBuildr",
       "current": {
-        "cost": 874.65,
-        "impressions": 13624,
-        "clicks": 1779,
-        "conversions": 69.0,
+        "cost": 1080.12,
+        "impressions": 16866,
+        "clicks": 2146,
+        "conversions": 95.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -608,11 +608,11 @@
     "dotties-flowers": {
       "name": "Dotties Flowers",
       "current": {
-        "cost": 5476.39,
-        "impressions": 16488,
-        "clicks": 1105,
-        "conversions": 122.99,
-        "revenue": 15903.46
+        "cost": 7468.99,
+        "impressions": 21945,
+        "clicks": 1476,
+        "conversions": 178.76,
+        "revenue": 22894.16
       },
       "prior_year": {
         "cost": 85249.88,
@@ -625,17 +625,17 @@
         "cost": 72360.34,
         "impressions": 174862,
         "clicks": 11624,
-        "conversions": 1850.1,
+        "conversions": 1850.32,
         "revenue": 246390.05
       }
     },
     "highland-district-hospital": {
       "name": "Highland District Hospital",
       "current": {
-        "cost": 440.28,
-        "impressions": 9243,
-        "clicks": 503,
-        "conversions": 55.96,
+        "cost": 565.8,
+        "impressions": 10710,
+        "clicks": 623,
+        "conversions": 78.96,
         "revenue": 0.0
       },
       "prior_year": {
@@ -649,18 +649,18 @@
         "cost": 3259.72,
         "impressions": 45274,
         "clicks": 3273,
-        "conversions": 586.29,
+        "conversions": 587.29,
         "revenue": 0.0
       }
     },
     "sports-imports": {
       "name": "Sports Imports",
       "current": {
-        "cost": 2590.82,
-        "impressions": 53363,
-        "clicks": 1002,
-        "conversions": 28.0,
-        "revenue": 1832.12
+        "cost": 3445.28,
+        "impressions": 66059,
+        "clicks": 1267,
+        "conversions": 46.0,
+        "revenue": 5133.14
       },
       "prior_year": {
         "cost": 11842.53,
@@ -673,18 +673,18 @@
         "cost": 22293.03,
         "impressions": 267113,
         "clicks": 7296,
-        "conversions": 496.91,
-        "revenue": 43715.36
+        "conversions": 501.91,
+        "revenue": 43779.36
       }
     },
     "twinbrook": {
       "name": "Twinbrook",
       "current": {
-        "cost": 1831.12,
-        "impressions": 7383,
-        "clicks": 462,
-        "conversions": 60.0,
-        "revenue": 6405.64
+        "cost": 2737.71,
+        "impressions": 10952,
+        "clicks": 658,
+        "conversions": 84.0,
+        "revenue": 8872.47
       },
       "prior_year": {
         "cost": 7047.95,
@@ -697,36 +697,36 @@
         "cost": 11398.11,
         "impressions": 23329,
         "clicks": 2399,
-        "conversions": 342.0,
-        "revenue": 37000.67
+        "conversions": 345.0,
+        "revenue": 37400.65
       }
     },
     "mcshan": {
       "name": "McShan",
       "current": {
-        "cost": 696.89,
-        "impressions": 3649,
-        "clicks": 289,
-        "conversions": 52.0,
-        "revenue": 7459.8
+        "cost": 926.41,
+        "impressions": 4398,
+        "clicks": 355,
+        "conversions": 66.0,
+        "revenue": 9296.29
       },
       "prior_year": null,
       "prior_month": {
         "cost": 5563.82,
         "impressions": 25679,
         "clicks": 1578,
-        "conversions": 217.0,
-        "revenue": 24343.19
+        "conversions": 218.0,
+        "revenue": 24463.14
       }
     },
     "rockcastle": {
       "name": "Rockcastle",
       "current": {
-        "cost": 3099.95,
-        "impressions": 37323,
-        "clicks": 853,
-        "conversions": 101.63,
-        "revenue": 12393.63
+        "cost": 4193.71,
+        "impressions": 44206,
+        "clicks": 1077,
+        "conversions": 127.63,
+        "revenue": 15425.73
       },
       "prior_year": {
         "cost": 29744.39,
@@ -739,17 +739,17 @@
         "cost": 27283.97,
         "impressions": 116175,
         "clicks": 5885,
-        "conversions": 788.82,
-        "revenue": 103524.05
+        "conversions": 790.82,
+        "revenue": 103754.05
       }
     },
     "zeurcher-law": {
       "name": "Zeurcher Law",
       "current": {
-        "cost": 344.16,
-        "impressions": 410,
-        "clicks": 22,
-        "conversions": 1.0,
+        "cost": 423.72,
+        "impressions": 442,
+        "clicks": 24,
+        "conversions": 3.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -770,11 +770,11 @@
     "williams-portland": {
       "name": "Williams Portland",
       "current": {
-        "cost": 5195.57,
-        "impressions": 5993,
-        "clicks": 681,
-        "conversions": 78.0,
-        "revenue": 10380.1
+        "cost": 6231.61,
+        "impressions": 7456,
+        "clicks": 849,
+        "conversions": 97.0,
+        "revenue": 13158.83
       },
       "prior_year": {
         "cost": 38029.09,
@@ -794,11 +794,11 @@
     "chesnutt-law": {
       "name": "Chesnutt Law",
       "current": {
-        "cost": 419.15,
-        "impressions": 22797,
-        "clicks": 840,
-        "conversions": 10.0,
-        "revenue": 0.0
+        "cost": 700.75,
+        "impressions": 26548,
+        "clicks": 997,
+        "conversions": 12.0,
+        "revenue": 1.0
       },
       "prior_year": {
         "cost": 2502.06,
@@ -811,18 +811,18 @@
         "cost": 4455.36,
         "impressions": 62678,
         "clicks": 2533,
-        "conversions": 55.0,
+        "conversions": 56.0,
         "revenue": 12.0
       }
     },
     "champion-propane": {
       "name": "Champion Propane",
       "current": {
-        "cost": 196.83,
-        "impressions": 309,
-        "clicks": 27,
-        "conversions": 7.0,
-        "revenue": 3.0
+        "cost": 320.2,
+        "impressions": 397,
+        "clicks": 38,
+        "conversions": 9.0,
+        "revenue": 4.0
       },
       "prior_year": {
         "cost": 8411.1,
@@ -842,11 +842,11 @@
     "connectors-only": {
       "name": "Connectors Only",
       "current": {
-        "cost": 706.53,
-        "impressions": 48551,
-        "clicks": 657,
-        "conversions": 9.0,
-        "revenue": 2563.45
+        "cost": 871.9,
+        "impressions": 59096,
+        "clicks": 792,
+        "conversions": 12.0,
+        "revenue": 3330.59
       },
       "prior_year": {
         "cost": 3240.7,
@@ -866,9 +866,9 @@
     "benjamin-martin-law": {
       "name": "Benjamin Martin Law",
       "current": {
-        "cost": 43.06,
-        "impressions": 96,
-        "clicks": 9,
+        "cost": 67.06,
+        "impressions": 115,
+        "clicks": 11,
         "conversions": 1.0,
         "revenue": 0.0
       },
@@ -890,11 +890,11 @@
     "locksets-only": {
       "name": "Locksets Only",
       "current": {
-        "cost": 768.07,
-        "impressions": 55300,
-        "clicks": 706,
-        "conversions": 22.89,
-        "revenue": 1672.19
+        "cost": 949.84,
+        "impressions": 70116,
+        "clicks": 904,
+        "conversions": 26.89,
+        "revenue": 1862.05
       },
       "prior_year": {
         "cost": 3114.59,
@@ -907,16 +907,16 @@
         "cost": 5662.97,
         "impressions": 434022,
         "clicks": 5386,
-        "conversions": 212.24,
-        "revenue": 23632.8
+        "conversions": 213.24,
+        "revenue": 23708.45
       }
     },
     "sedalia-dental": {
       "name": "Sedalia Dental",
       "current": {
-        "cost": 338.7,
-        "impressions": 282,
-        "clicks": 21,
+        "cost": 499.77,
+        "impressions": 498,
+        "clicks": 29,
         "conversions": 4.0,
         "revenue": 0.0
       },
@@ -938,9 +938,9 @@
     "the-total-event": {
       "name": "The Total Event",
       "current": {
-        "cost": 231.61,
-        "impressions": 9348,
-        "clicks": 233,
+        "cost": 280.66,
+        "impressions": 9664,
+        "clicks": 250,
         "conversions": 7.0,
         "revenue": 492.28
       },
@@ -956,11 +956,11 @@
     "aebersold-florist": {
       "name": "Aebersold Florist",
       "current": {
-        "cost": 810.62,
-        "impressions": 3020,
-        "clicks": 254,
-        "conversions": 32.0,
-        "revenue": 3700.82
+        "cost": 1086.45,
+        "impressions": 4076,
+        "clicks": 344,
+        "conversions": 43.5,
+        "revenue": 5200.72
       },
       "prior_year": {
         "cost": 542.62,
@@ -980,9 +980,9 @@
     "the-flower-shop-of-iowa": {
       "name": "The Flower Shop of Iowa",
       "current": {
-        "cost": 41.03,
-        "impressions": 72,
-        "clicks": 14,
+        "cost": 74.28,
+        "impressions": 140,
+        "clicks": 20,
         "conversions": 3.0,
         "revenue": 130.27
       },
@@ -1022,11 +1022,11 @@
     "blanca-floral": {
       "name": "Blanca Floral",
       "current": {
-        "cost": 273.85,
-        "impressions": 869,
-        "clicks": 52,
-        "conversions": 4.99,
-        "revenue": 603.16
+        "cost": 343.37,
+        "impressions": 1321,
+        "clicks": 66,
+        "conversions": 5.99,
+        "revenue": 736.56
       },
       "prior_year": {
         "cost": 2639.91,
@@ -1046,11 +1046,11 @@
     "flower-shop-of-lake-charles": {
       "name": "Flower Shop of Lake Charles",
       "current": {
-        "cost": 158.0,
-        "impressions": 346,
-        "clicks": 32,
-        "conversions": 5.0,
-        "revenue": 627.05
+        "cost": 204.73,
+        "impressions": 436,
+        "clicks": 42,
+        "conversions": 9.0,
+        "revenue": 1131.03
       },
       "prior_year": null,
       "prior_month": {
@@ -1064,11 +1064,11 @@
     "pflorist": {
       "name": "Pflorist",
       "current": {
-        "cost": 5116.69,
-        "impressions": 27566,
-        "clicks": 1321,
-        "conversions": 156.83,
-        "revenue": 18285.67
+        "cost": 7249.56,
+        "impressions": 36893,
+        "clicks": 1795,
+        "conversions": 213.83,
+        "revenue": 25082.62
       },
       "prior_year": {
         "cost": 33960.19,
@@ -1081,17 +1081,17 @@
         "cost": 41318.27,
         "impressions": 203416,
         "clicks": 9466,
-        "conversions": 1207.26,
-        "revenue": 140013.96
+        "conversions": 1208.26,
+        "revenue": 140077.56
       }
     },
     "gcac-grant": {
       "name": "GCAC Grant",
       "current": {
-        "cost": 1329.91,
-        "impressions": 4150,
-        "clicks": 415,
-        "conversions": 74.0,
+        "cost": 1663.18,
+        "impressions": 5133,
+        "clicks": 504,
+        "conversions": 84.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -1105,18 +1105,18 @@
         "cost": 9970.93,
         "impressions": 36062,
         "clicks": 3667,
-        "conversions": 476.03,
+        "conversions": 478.03,
         "revenue": 0.0
       }
     },
     "williams-flowers": {
       "name": "Williams Flowers",
       "current": {
-        "cost": 12913.3,
-        "impressions": 85685,
-        "clicks": 3177,
-        "conversions": 261.63,
-        "revenue": 37549.84
+        "cost": 16680.1,
+        "impressions": 106134,
+        "clicks": 3957,
+        "conversions": 349.46,
+        "revenue": 49776.25
       },
       "prior_year": {
         "cost": 96574.91,
@@ -1129,18 +1129,18 @@
         "cost": 100570.52,
         "impressions": 602557,
         "clicks": 21887,
-        "conversions": 2316.9,
-        "revenue": 306177.28
+        "conversions": 2302.63,
+        "revenue": 306432.21
       }
     },
     "longmont-florist": {
       "name": "Longmont Florist",
       "current": {
-        "cost": 1288.97,
-        "impressions": 4393,
-        "clicks": 385,
-        "conversions": 69.98,
-        "revenue": 6586.31
+        "cost": 1724.51,
+        "impressions": 5511,
+        "clicks": 499,
+        "conversions": 92.98,
+        "revenue": 8913.74
       },
       "prior_year": {
         "cost": 11704.13,
@@ -1153,18 +1153,18 @@
         "cost": 12613.62,
         "impressions": 36168,
         "clicks": 3276,
-        "conversions": 699.19,
-        "revenue": 77250.34
+        "conversions": 703.19,
+        "revenue": 77781.15
       }
     },
     "bedford-village": {
       "name": "Bedford Village",
       "current": {
-        "cost": 517.11,
-        "impressions": 944,
-        "clicks": 82,
-        "conversions": 5.0,
-        "revenue": 1056.45
+        "cost": 700.31,
+        "impressions": 1193,
+        "clicks": 109,
+        "conversions": 10.0,
+        "revenue": 2116.1
       },
       "prior_year": {
         "cost": 11493.17,
@@ -1184,11 +1184,11 @@
     "ode-a-la-rose": {
       "name": "Ode a La Rose",
       "current": {
-        "cost": 52797.27,
-        "impressions": 168035,
-        "clicks": 8540,
-        "conversions": 949.63,
-        "revenue": 158055.11
+        "cost": 74166.87,
+        "impressions": 224719,
+        "clicks": 11571,
+        "conversions": 1326.63,
+        "revenue": 220194.59
       },
       "prior_year": {
         "cost": 382883.91,
@@ -1201,18 +1201,18 @@
         "cost": 444929.57,
         "impressions": 1269514,
         "clicks": 71106,
-        "conversions": 9201.17,
-        "revenue": 1535985.69
+        "conversions": 9224.18,
+        "revenue": 1539568.99
       }
     },
     "nancys-floral": {
       "name": "Nancy's Floral",
       "current": {
-        "cost": 387.53,
-        "impressions": 3675,
-        "clicks": 175,
-        "conversions": 19.99,
-        "revenue": 1706.93
+        "cost": 574.79,
+        "impressions": 4553,
+        "clicks": 233,
+        "conversions": 30.99,
+        "revenue": 2728.47
       },
       "prior_year": {
         "cost": 3505.78,
@@ -1232,11 +1232,11 @@
     "blooms-in-bunches": {
       "name": "Blooms in Bunches",
       "current": {
-        "cost": 193.96,
-        "impressions": 417,
-        "clicks": 46,
-        "conversions": 7.0,
-        "revenue": 704.49
+        "cost": 277.91,
+        "impressions": 607,
+        "clicks": 70,
+        "conversions": 11.0,
+        "revenue": 1119.14
       },
       "prior_year": {
         "cost": 2263.75,
@@ -1256,10 +1256,10 @@
     "aw-law": {
       "name": "AW Law",
       "current": {
-        "cost": 391.92,
-        "impressions": 2158,
-        "clicks": 99,
-        "conversions": 9.0,
+        "cost": 575.41,
+        "impressions": 3275,
+        "clicks": 124,
+        "conversions": 12.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -1280,11 +1280,11 @@
     "anaheim-hills": {
       "name": "Anaheim Hills",
       "current": {
-        "cost": 262.84,
-        "impressions": 1094,
-        "clicks": 77,
-        "conversions": 13.0,
-        "revenue": 769.9
+        "cost": 322.76,
+        "impressions": 1474,
+        "clicks": 97,
+        "conversions": 18.0,
+        "revenue": 1026.85
       },
       "prior_year": {
         "cost": 2464.52,
@@ -1297,16 +1297,16 @@
         "cost": 2603.22,
         "impressions": 11746,
         "clicks": 754,
-        "conversions": 168.35,
-        "revenue": 9488.4
+        "conversions": 169.35,
+        "revenue": 9489.4
       }
     },
     "a-classic-bloom": {
       "name": "A Classic Bloom",
       "current": {
-        "cost": 946.28,
-        "impressions": 4109,
-        "clicks": 184,
+        "cost": 1194.87,
+        "impressions": 5004,
+        "clicks": 231,
         "conversions": 18.0,
         "revenue": 3306.78
       },
@@ -1321,17 +1321,17 @@
         "cost": 5739.0,
         "impressions": 532354,
         "clicks": 15903,
-        "conversions": 380.0,
-        "revenue": 7724.64
+        "conversions": 381.0,
+        "revenue": 7903.15
       }
     },
     "gcac": {
       "name": "GCAC",
       "current": {
-        "cost": 58.58,
-        "impressions": 6333,
-        "clicks": 3439,
-        "conversions": 1975.52,
+        "cost": 63.62,
+        "impressions": 6829,
+        "clicks": 3549,
+        "conversions": 2022.02,
         "revenue": 0.0
       },
       "prior_year": {
@@ -1345,18 +1345,18 @@
         "cost": 501.21,
         "impressions": 18250,
         "clicks": 7007,
-        "conversions": 3283.47,
+        "conversions": 3285.47,
         "revenue": 0.0
       }
     },
     "monroe-florist": {
       "name": "Monroe Florist",
       "current": {
-        "cost": 305.21,
-        "impressions": 748,
-        "clicks": 106,
-        "conversions": 10.0,
-        "revenue": 794.36
+        "cost": 435.72,
+        "impressions": 928,
+        "clicks": 137,
+        "conversions": 13.49,
+        "revenue": 1020.96
       },
       "prior_year": {
         "cost": 3934.87,
@@ -1376,10 +1376,10 @@
     "airforce-turbine-service": {
       "name": "Airforce Turbine Service",
       "current": {
-        "cost": 562.9,
-        "impressions": 2954,
-        "clicks": 174,
-        "conversions": 7.0,
+        "cost": 879.89,
+        "impressions": 4414,
+        "clicks": 258,
+        "conversions": 12.0,
         "revenue": 0.0
       },
       "prior_year": {
@@ -1533,6 +1533,24 @@
         "clicks": 0,
         "conversions": 0,
         "revenue": 0
+      }
+    },
+    "philpott-florists": {
+      "name": "Philpott Florists",
+      "current": {
+        "cost": 386.23,
+        "impressions": 1304,
+        "clicks": 112,
+        "conversions": 1.0,
+        "revenue": 75.0
+      },
+      "prior_year": null,
+      "prior_month": {
+        "cost": 2280.01,
+        "impressions": 7996,
+        "clicks": 717,
+        "conversions": 25.0,
+        "revenue": 1340.64
       }
     }
   }
